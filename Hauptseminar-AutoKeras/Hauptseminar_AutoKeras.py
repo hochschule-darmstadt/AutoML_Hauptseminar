@@ -40,7 +40,7 @@ def print_experiment_result(target: str, exp_result_1, exp_result_2, exp_result_
 	print(np.mean(exp_result_2.history[target]))
 	print(np.mean(exp_result_3.history[target]))
 	print("MEAN VALUE")
-	mean_value = np.mean(np.array(np.mean(exp_result_1.history[target]), np.mean(exp_result_2.history[target]), np.mean(exp_result_3.history[target])))
+	mean_value = np.mean(np.array([np.mean(exp_result_1.history[target]), np.mean(exp_result_2.history[target]), np.mean(exp_result_3.history[target])]))
 	print(mean_value)
 	print("RESULTS")
 	print("#######################")
@@ -65,24 +65,24 @@ def run_experiment(is_classification: bool):
 		#init AutoKeras task
 		if is_classification == True:
 			clf = ak.StructuredDataClassifier(overwrite=True, 
-										   max_trials=10, 
+										   max_trials=1, 
 										   objective=kt.Objective('val_f1_score', direction='max'),
 										   metrics=[f1_score])
 		else:
 			clf = ak.StructuredDataRegressor(overwrite=True, 
-										   max_trials=10, 
+										   max_trials=1, 
 										   objective=kt.Objective('val_rmse', direction='min'),
 										   metrics=[rmse])
 		#run each experiment and save the f1 score in seperate variables
 		time_at_start = t.time()
 		if i == 0:
-			exp_result_1 = clf.fit(x, y, epochs=10)
+			exp_result_1 = clf.fit(x, y, epochs=1)
 			time_experiment_1 = t.time() - time_at_start
 		elif i == 1:
-			exp_result_2 = clf.fit(x, y, epochs=10)
+			exp_result_2 = clf.fit(x, y, epochs=1)
 			time_experiment_2 = t.time() - time_at_start
 		else:
-			exp_result_3 = clf.fit(x, y, epochs=10)
+			exp_result_3 = clf.fit(x, y, epochs=1)
 			time_experiment_3 = t.time() - time_at_start
 	
 	print("TIMES")
