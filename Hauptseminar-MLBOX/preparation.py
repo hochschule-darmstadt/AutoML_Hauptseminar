@@ -16,9 +16,11 @@ def prepare_data(name: str, target: str, folder: str = "data"):
     # rs = 42
     # train, test = train_test_split(X, test_size=0.3, random_state=rs)
     train, test = train_test_split(X, test_size=0.3)
+    test_target = test[target]
     test.drop(columns=[target], inplace=True)
     train.to_csv(f"{folder}/{name}_train.csv")
     test.to_csv(f"{folder}/{name}_test.csv")
+    test_target.to_csv(f"{folder}/{name}_test_target.csv", header=[target])
 
 
 def pretty_print(text: str):
