@@ -1,8 +1,9 @@
 from typing_extensions import Literal
+import pandas as pd
 from mlbox.preprocessing import Reader, Drift_thresholder
 from mlbox.optimisation import Optimiser
 from mlbox.prediction import Predictor
-from sklearn.metrics import mean_squared_error, make_scorer
+from sklearn.metrics import mean_squared_error, make_scorer, f1_score
 
 from preparation import prepare_data, pretty_print
 
@@ -16,18 +17,20 @@ def select_config(dataset: Literal["college", "phishing"]):
     if dataset == "college":
         target_name = "percent_pell_grant"
         used_scorer = make_scorer(mean_squared_error, squared=False, greater_is_better=False)
+        def scoring_function(x, y): return mean_squared_error(x, y, squared=False)
     # For Phising Dataset Goal: F1 score
     elif dataset == "phishing":
         target_name = "Result"
         used_scorer = "f1"
+        scoring_function = f1_score
     else:
         raise NameError("We don't got this dataset!")
-    return (target_name, used_scorer)
+    return (target_name, used_scorer, scoring_function)
 
 
 def apply_auto_ml(dataset: Literal["college", "phishing"]):
     # Get needed target and scorer
-    target_name, used_scorer = select_config(dataset)
+    target_name, used_scorer, scoring_function = select_config(dataset)
     # Need train test split as files ...
     prepare_data(dataset, target_name)
 
@@ -38,14 +41,17 @@ def apply_auto_ml(dataset: Literal["college", "phishing"]):
     opt = Optimiser(scoring=used_scorer, n_folds=10)
     score = opt.evaluate(None, data)
     pretty_print(f"Score is: {score}")
-    return score
 
-    # This does not the seem to make a difference when space is default (set to none)
-    # Probably it will pick the best hyperparameter if multiple will be used
-    # best = opt.optimise(None, data, max_evals=10)
-    # opt_score = opt.evaluate(best, data)
-    # pretty_print(f"Optimized Score is: {opt_score}")
-    # Predictor().fit_predict(best, data)
+    best = opt.optimise(None, data, 10)
+    pred = Predictor(verbose=False).fit_predict(best, data)
+    # return score
+
+    test_target = pd.read_csv(f"data/{dataset}_test_target.csv")
+    y_true = test_target[target_name].to_list()
+    pred_df = pd.read_csv(f"save/{target_name}_predictions.csv")
+    y_pred = pred_df[f"{target_name}_predicted"].to_list()
+    score_test = scoring_function(y_true, y_pred)
+    return (score, score_test)
 
 
 def main():
@@ -57,8 +63,8 @@ def main():
         college.append(apply_auto_ml("college"))
         phishing.append(apply_auto_ml("phishing"))
     print("#" * 100)
-    print(f"College Dataset got Scores: {college}")
-    print(f"Phishing Dataset got Scores: {phishing}")
+    print(f"College Dataset got Scores (crossvalidation, testing/validation DS): {college}")
+    print(f"Phishing Dataset got Scores (crossvalidation, testing/validation DS): {phishing}")
     print("#" * 100)
 
 
