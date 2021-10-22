@@ -65,3 +65,15 @@ if ((sum([df_test[path].shape[0]
     print("")
     print("You have no test dataset !")
 ```
+
+### Classifier Always Return same Predictions with Multiple Runs
+
+This is a problem with the library. The source code defines a fixed seed, therefore the model will always start with the same initial weights. This will also (with the same input data) result in the same model and score of test data in our case.
+
+```python
+# Somewhere in the classifier.py and Classifier()
+elif(strategy == "LightGBM"):
+    self.__classifier = LGBMClassifier(
+        n_estimators=500, learning_rate=0.05,
+        colsample_bytree=0.8, subsample=0.9, nthread=-1, seed=0)
+```

@@ -1,5 +1,7 @@
 from typing_extensions import Literal
 import pandas as pd
+import random
+import numpy as np
 from mlbox.preprocessing import Reader, Drift_thresholder
 from mlbox.optimisation import Optimiser
 from mlbox.prediction import Predictor
@@ -28,17 +30,18 @@ def select_config(dataset: Literal["college", "phishing"]):
     return (target_name, used_scorer, scoring_function)
 
 
-def apply_auto_ml(dataset: Literal["college", "phishing"]):
+def apply_auto_ml(dataset: Literal["college", "phishing"], rs: int):
     # Get needed target and scorer
     target_name, used_scorer, scoring_function = select_config(dataset)
+    # Don't need this anymore, got new train/test from master
     # Need train test split as files ...
-    prepare_data(dataset, target_name)
+    # prepare_data(dataset, target_name)
 
     paths = [f"data/{dataset}_train.csv", f"data/{dataset}_test.csv"]
     data = Reader(sep=",").train_test_split(paths, target_name)
     data = Drift_thresholder().fit_transform(data)
 
-    opt = Optimiser(scoring=used_scorer, n_folds=10)
+    opt = Optimiser(scoring=used_scorer, n_folds=10, random_state=rs)
     score = opt.evaluate(None, data)
     pretty_print(f"Score is: {score}")
 
@@ -58,10 +61,13 @@ def main():
     """Run each dataset three times and print scores at the end"""
     college = []
     phishing = []
+    rs = [42, 1337, 543]
     for i in range(1, 4):
+        np.random.seed(rs[i - 1])
+        random.seed(rs[i - 1])
         print(f"Round {i}")
-        college.append(apply_auto_ml("college"))
-        phishing.append(apply_auto_ml("phishing"))
+        college.append(apply_auto_ml("college", rs[i - 1]))
+        phishing.append(apply_auto_ml("phishing", rs[i - 1]))
     print("#" * 100)
     print(f"College Dataset got Scores (crossvalidation, testing/validation DS): {college}")
     print(f"Phishing Dataset got Scores (crossvalidation, testing/validation DS): {phishing}")
