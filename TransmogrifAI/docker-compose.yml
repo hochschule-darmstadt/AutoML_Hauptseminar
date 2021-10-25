@@ -1,0 +1,38 @@
+services:
+  spark:
+    build: App
+    volumes:
+      - ./spark-defaults.conf:/opt/bitnami/spark/conf/spark-defaults.conf
+      - ./resdir:/resdir:z
+    environment:
+      - SPARK_MODE=master
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+
+  spark-worker:
+    build: App
+    volumes:
+      - ./resdir:/resdir:z
+      - ./spark-defaults.conf:/opt/bitnami/spark/conf/spark-defaults.conf
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark:7077
+      - SPARK_WORKER_MEMORY=18G
+      - SPARK_WORKER_CORES=4
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+    
+  submit:
+    build: App
+    volumes:
+      - ./resdir:/resdir:z
+      - ./spark-defaults.conf:/opt/bitnami/spark/conf/spark-defaults.conf
+    depends_on:
+      - spark
+      - spark-worker
+    restart: "no"
+    entrypoint: ["bash", "-c", "sleep 10 && spark-submit --class App.App --master spark://spark:7077 --deploy-mode client file://$$SPARK_HOME/jars/app.jar &> /resdir/run.log"]
