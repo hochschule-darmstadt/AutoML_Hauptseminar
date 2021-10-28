@@ -48,15 +48,15 @@ def generate_data(dataset: Literal["college", "phishing"]):
     return (X_train, X_test, y_train, y_test)
 
 
-def do_classification(X_train, X_test, y_train, y_test, scorer):
-    automl = autosklearn.classification.AutoSklearnClassifier(time_left_for_this_task=600)
+def do_classification(X_train, X_test, y_train, y_test, scorer, seed=1):
+    automl = autosklearn.classification.AutoSklearnClassifier(time_left_for_this_task=600, seed=seed)
     automl.fit(X_train, y_train)
     y_hat = automl.predict(X_test)
     print("Accuracy score Classification", scorer(y_test, y_hat))
 
 
-def do_regression(X_train, X_test, y_train, y_test, scorer):
-    automl = autosklearn.regression.AutoSklearnRegressor(time_left_for_this_task=600)
+def do_regression(X_train, X_test, y_train, y_test, scorer, seed=1):
+    automl = autosklearn.regression.AutoSklearnRegressor(time_left_for_this_task=600, seed=seed)
     automl.fit(X_train, y_train)
     y_hat = automl.predict(X_test)
     print("Accuracy score", scorer(y_test, y_hat))
@@ -68,14 +68,14 @@ def main():
     _, scorer = select_config("phishing")
     for i in range(1, 4):
         print(f"Doing classification No. {i}")
-        do_classification(X_train, X_test, y_train, y_test, scorer)
+        do_classification(X_train, X_test, y_train, y_test, scorer, seed=i)
 
     # Then regression
     X_train, X_test, y_train, y_test = generate_data("college")
     _, scorer = select_config("college")
     for i in range(1, 4):
         print(f"Doing regression No. {i}")
-        do_regression(X_train, X_test, y_train, y_test, scorer)
+        do_regression(X_train, X_test, y_train, y_test, scorer, seed=i)
 
 
 if __name__ == "__main__":
