@@ -38,9 +38,7 @@ def run_autogluon_experiment(train_dataset,
         )
 
         predictor.fit(
-            # train_data=train_data,
             train_data=train_dataset,
-            # tuning_data=val_data,
             time_limit=time_limit
         )
 
