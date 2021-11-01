@@ -1,0 +1,228 @@
+{
+    "type": "record",
+    "name": "Phishing",
+    "namespace": "de.lukas_jansen.hda.seminar",
+    "fields": [
+        {
+            "name": "ID",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "having_IP_Address",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "URL_Length",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Shortining_Service",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "having_At_Symbol",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "double_slash_redirecting",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Prefix_Suffix",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "having_Sub_Domain",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "SSLfinal_State",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Domain_registeration_length",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Favicon",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "port",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "HTTPS_token",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Request_URL",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "URL_of_Anchor",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Links_in_tags",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "SFH",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Submitting_to_email",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Abnormal_URL",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Redirect",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "on_mouseover",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "RightClick",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "popUpWidnow",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Iframe",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "age_of_domain",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "DNSRecord",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "web_traffic",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Page_Rank",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Google_Index",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Links_pointing_to_page",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Statistical_report",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "Result",
+            "type": "int"
+        }
+    ]
+}

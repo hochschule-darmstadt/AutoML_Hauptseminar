@@ -1,0 +1,340 @@
+{
+    "type": "record",
+    "name": "College",
+    "namespace": "de.lukas_jansen.hda.seminar",
+    "fields": [
+        {
+            "name": "UNITID",
+            "type": [
+                "int",
+                "null"
+            ]
+        },
+        {
+            "name": "school_name",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "city",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "state",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "zip",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "school_webpage",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "latitude",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "longitude",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "admission_rate",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "sat_verbal_midrange",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "sat_math_midrange",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "sat_writing_midrange",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "act_combined_midrange",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "act_english_midrange",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "act_math_midrange",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "act_writing_midrange",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "sat_total_average",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "undergrad_size",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "percent_white",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "percent_black",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "percent_hispanic",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "percent_asian",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "percent_part_time",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "average_cost_academic_year",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "average_cost_program_year",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "tuition_instate",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "tuition_out_of_state",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "spend_per_student",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "faculty_salary",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "percent_part_time_faculty",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "percent_pell_grant",
+            "type": "double"
+        },
+        {
+            "name": "completion_rate",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "predominant_degree",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "highest_degree",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "ownership",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "region",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "gender",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "carnegie_basic_classification",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "carnegie_undergraduate",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "carnegie_size",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "religious_affiliation",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "percent_female",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "agege24",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "faminc",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "mean_earnings_6_years",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "median_earnings_6_years",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "mean_earnings_10_years",
+            "type": [
+                "double",
+                "null"
+            ]
+        },
+        {
+            "name": "median_earnings_10_years",
+            "type": [
+                "double",
+                "null"
+            ]
+        }
+    ]
+}
