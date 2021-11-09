@@ -10,11 +10,15 @@ RUN chown 1001:0 /resdir
 RUN useradd -M -u 1001 -g 0 -d /resdir spark
 
 USER root
-COPY collegeregression /wdir/collegeregression/
+# Add current jcenter certificate
+COPY jcenter.cer $JAVA_HOME/jre/lib/security
+RUN cd $JAVA_HOME/jre/lib/security \
+    && keytool -keystore cacerts -storepass changeit -noprompt -trustcacerts -importcert -alias jcentercert -file jcenter.cer
+COPY automlproject /wdir/automlproject/
 COPY college_train_headerfix.csv /wdir/
 COPY college_test_headerfix.csv /wdir/
 COPY training.sh /wdir/
 RUN chown -R 1001:0 /wdir
 USER 1001
 WORKDIR /wdir
-RUN cd /wdir/collegeregression && /opt/gradle/gradle-5.2/bin/gradle build
+RUN cd /wdir/automlproject && /opt/gradle/gradle-5.2/bin/gradle copyLog4jToSpark

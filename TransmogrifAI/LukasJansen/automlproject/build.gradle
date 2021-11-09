@@ -31,7 +31,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 // The main class for the application plugin
-mainClassName = 'com.salesforce.app.CollegeRegression'
+mainClassName = 'de.lukas_jansen.automl.Main'
 
 ext {
     scalaVersion = '2.11'

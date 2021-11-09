@@ -1,7 +1,7 @@
 {
     "type": "record",
     "name": "College",
-    "namespace": "de.lukas_jansen.hda.seminar",
+    "namespace": "de.lukas_jansen.automl.schema",
     "fields": [
         {
             "name": "UNITID",

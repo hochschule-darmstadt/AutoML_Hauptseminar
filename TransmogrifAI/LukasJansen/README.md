@@ -1,9 +1,18 @@
 # TransmogrifAI
+
+
+There we two older attempts. One just starting from Scratch (Without the gradle plugin, Dependency distribution in the cluster is a mess, even with the plugin mechanism from spark) and the other using the project boostrap from the documentation (which is currently generating unusable code, see https://github.com/salesforce/TransmogrifAI/issues/408#issuecomment-540758245). The solution was to combine the two and start from scratch in a generated project.
+
+I recommend IntelliJ for the project directory.
 ## Running
 
 ```sh
-docker-compose up -d --build spark worker
+docker-compose up -d --build spark worker submit
+# This IP can be used to look at the UIs
 docker inspect lukasjansen_spark_1 | grep IPAddress
+sleep 60
+# Always 2 starts required, don't know why
+docker-compose up -d submit
 docker-compose exec spark tail -f /resdir/run.log
 docker-compose exec spark cat /resdir/run.log
 ```
@@ -136,3 +145,4 @@ class SampleReader(val isTrain: Boolean) extends ReaderWithHeaders
 
 ```
 
+Now the two projects were combined.
