@@ -1,0 +1,12 @@
+numpy
+scipy
+scikit-learn
+pandas
+joblib
+torch
+deap
+update_checker
+tqdm
+stopit
+xgboost
+tpot
