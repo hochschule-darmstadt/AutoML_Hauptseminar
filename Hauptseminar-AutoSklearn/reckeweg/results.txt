@@ -1,0 +1,114 @@
+Started experiment number 0
+Finished experiment number 0, the classification model reached a f1 score of 0.9352785145888595
+          rank  ensemble_weight                type      cost   duration
+model_id                                                                
+60           1             0.18   gradient_boosting  0.022318  57.978646
+35           2             0.10   gradient_boosting  0.022709   4.689234
+53           3             0.10   gradient_boosting  0.023101   6.626229
+64           4             0.04   gradient_boosting  0.023493  11.273474
+70           5             0.04   gradient_boosting  0.023884   4.861998
+27           6             0.06                 mlp  0.024276  35.558237
+2            7             0.04       random_forest  0.024667   5.430631
+23           8             0.06         extra_trees  0.027800  87.793210
+72           9             0.02   gradient_boosting  0.028191   8.285439
+10          10             0.02                 mlp  0.032498  12.459607
+44          11             0.04   gradient_boosting  0.034456   4.232331
+37          12             0.02   gradient_boosting  0.034847  35.566178
+61          13             0.04   gradient_boosting  0.036022   3.051984
+34          14             0.04       random_forest  0.036022  20.370712
+58          15             0.04   gradient_boosting  0.037197   2.389190
+52          16             0.02  passive_aggressive  0.041895  53.937749
+62          17             0.06                 sgd  0.043070  26.798311
+38          18             0.02       random_forest  0.046202   7.005155
+22          19             0.02                 mlp  0.047377  48.116955
+30          20             0.02       decision_tree  0.047768   6.345021
+13          21             0.02       random_forest  0.049726   4.375773
+Started experiment number 1
+Finished experiment number 1, the classification model reached a f1 score of 0.9362924281984334
+          rank  ensemble_weight               type      cost   duration
+model_id                                                               
+47           1             0.02  gradient_boosting  0.022318   5.961455
+2            2             0.02      random_forest  0.023101   5.126951
+54           3             0.02  gradient_boosting  0.023101   9.090640
+19           4             0.02  gradient_boosting  0.025450   6.215023
+63           5             0.02  gradient_boosting  0.028191   5.911016
+76           6             0.02  gradient_boosting  0.038371   8.608694
+20           7             0.04                mlp  0.039546   6.306159
+10           8             0.02                mlp  0.039937  10.945239
+72           9             0.62           adaboost  0.044244   4.522827
+4           10             0.02  gradient_boosting  0.045027   3.066735
+28          11             0.14      random_forest  0.045419  79.332965
+9           12             0.02         libsvm_svc  0.049334   5.391991
+18          13             0.02  gradient_boosting  0.060298   4.976704
+Started experiment number 2
+Finished experiment number 2, the classification model reached a f1 score of 0.9363157894736842
+          rank  ensemble_weight                 type      cost   duration
+model_id                                                                 
+58           1             0.06    gradient_boosting  0.023493   8.241185
+51           2             0.02    gradient_boosting  0.023884   7.905638
+40           3             0.02    gradient_boosting  0.024667   2.985622
+48           4             0.02    gradient_boosting  0.025842   4.550126
+45           5             0.02    gradient_boosting  0.025842   7.207094
+47           6             0.02    gradient_boosting  0.027408   3.332517
+36           7             0.08                  mlp  0.028583  78.518262
+12           8             0.02                  mlp  0.029757  33.572109
+66           9             0.04          extra_trees  0.032498   6.597496
+4           10             0.04    gradient_boosting  0.045027   3.048609
+9           11             0.02           libsvm_svc  0.049334   5.446439
+29          12             0.06        random_forest  0.058340  63.403647
+34          13             0.08          extra_trees  0.060689  10.385211
+69          14             0.02                  mlp  0.061864   4.233589
+50          15             0.02          extra_trees  0.067737   5.086381
+59          16             0.02  k_nearest_neighbors  0.075176   3.396294
+25          17             0.36             adaboost  0.076351   5.040853
+33          18             0.06                  lda  0.078700   2.223778
+8           19             0.02                  lda  0.082224   1.919328
+The mean f1 score of the 3 classification models is 0.9359622440869924
+Started experiment number 0
+[WARNING] [2021-11-11 13:02:11,903:Client-EnsembleBuilder] No models better than random - using Dummy loss!Number of models besides current dummy model: 1. Number of dummy models: 1
+[WARNING] [2021-11-11 13:02:13,064:Client-EnsembleBuilder] No models better than random - using Dummy loss!Number of models besides current dummy model: 1. Number of dummy models: 1
+[WARNING] [2021-11-11 13:02:13,633:Client-EnsembleBuilder] No models better than random - using Dummy loss!Number of models besides current dummy model: 1. Number of dummy models: 1
+Finished experiment number 0, the regression model reached a root_mean_squared_error score of -0.1906066217219316
+          rank  ensemble_weight                 type      cost   duration
+model_id                                                                 
+12           1             0.28    gradient_boosting  0.411325  80.842005
+16           2             0.20    gradient_boosting  0.413532  10.266803
+38           3             0.14    gradient_boosting  0.414764   6.390860
+34           4             0.16    gradient_boosting  0.449774  58.500707
+11           5             0.08                  mlp  0.497898  57.233081
+22           6             0.04           libsvm_svr  0.644096  15.162701
+39           7             0.02        decision_tree  0.673375   2.871974
+40           8             0.08  k_nearest_neighbors  0.786057   2.722008
+Started experiment number 1
+[WARNING] [2021-11-11 13:12:24,207:Client-EnsembleBuilder] No models better than random - using Dummy loss!Number of models besides current dummy model: 1. Number of dummy models: 1
+[WARNING] [2021-11-11 13:12:25,864:Client-EnsembleBuilder] No models better than random - using Dummy loss!Number of models besides current dummy model: 1. Number of dummy models: 1
+[WARNING] [2021-11-11 13:12:26,177:Client-EnsembleBuilder] No models better than random - using Dummy loss!Number of models besides current dummy model: 1. Number of dummy models: 1
+Finished experiment number 1, the regression model reached a root_mean_squared_error score of -0.19248868914562697
+          rank  ensemble_weight               type      cost   duration
+model_id                                                               
+12           1             0.28  gradient_boosting  0.411325  90.605099
+16           2             0.16  gradient_boosting  0.413532   9.901500
+28           3             0.02  gradient_boosting  0.416573   6.286194
+45           4             0.18  gradient_boosting  0.433242   6.350928
+13           5             0.04  gradient_boosting  0.474709   9.619915
+11           6             0.14                mlp  0.483925  51.159290
+49           7             0.14  gradient_boosting  0.501705   3.630518
+22           8             0.04         libsvm_svr  0.643832  16.231781
+Started experiment number 2
+[WARNING] [2021-11-11 13:22:31,875:Client-EnsembleBuilder] No models better than random - using Dummy loss!Number of models besides current dummy model: 1. Number of dummy models: 1
+[WARNING] [2021-11-11 13:22:33,604:Client-EnsembleBuilder] No models better than random - using Dummy loss!Number of models besides current dummy model: 1. Number of dummy models: 1
+[WARNING] [2021-11-11 13:22:34,033:Client-EnsembleBuilder] No models better than random - using Dummy loss!Number of models besides current dummy model: 1. Number of dummy models: 1
+Finished experiment number 2, the regression model reached a root_mean_squared_error score of -0.19199336551397178
+          rank  ensemble_weight               type      cost   duration
+model_id                                                               
+12           1             0.28  gradient_boosting  0.411325  87.840769
+16           2             0.18  gradient_boosting  0.413532   9.721596
+32           3             0.02  gradient_boosting  0.420882  24.507165
+33           4             0.02  gradient_boosting  0.420941   7.273688
+7            5             0.04        extra_trees  0.430731  10.976842
+45           6             0.12  gradient_boosting  0.436845   5.273280
+8            7             0.02  gradient_boosting  0.440181  10.136182
+37           8             0.08  gradient_boosting  0.464854  11.325302
+11           9             0.20                mlp  0.470192  59.591600
+22          10             0.04         libsvm_svr  0.644314  16.183124
+The mean root_mean_squared_error score of the 3 regression models is -0.19169622546051013
