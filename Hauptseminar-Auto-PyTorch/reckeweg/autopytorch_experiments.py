@@ -131,8 +131,7 @@ def run_experiments(n, model_type, autopytorch_instance_params, autopytorch_sear
 if __name__ == "__main__":
 
     autopytorch_cls_instance_params_dict = {
-        # "n_jobs": -1,
-        "n_threads": -1,
+        "n_jobs": 4,
     }
 
     autopytorch_cls_search_params_dict = {
@@ -146,8 +145,7 @@ if __name__ == "__main__":
 
 
     autopytorch_reg_instance_params_dict = {
-        # "n_jobs": -1,
-        "n_threads": -1,
+        "n_jobs": 4,
     }
 
     autopytorch_reg_search_params_dict = {
