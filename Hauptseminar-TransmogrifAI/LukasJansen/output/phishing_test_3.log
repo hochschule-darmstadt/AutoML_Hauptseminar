@@ -1,0 +1,1144 @@
+Using properties file: /opt/bitnami/spark/conf/spark-defaults.conf
+Adding default property: spark.ui.reverseProxy=true
+Parsed arguments:
+  master                  spark://spark:7077
+  deployMode              client
+  executorMemory          2G
+  executorCores           1
+  totalExecutorCores      null
+  propertiesFile          /opt/bitnami/spark/conf/spark-defaults.conf
+  driverMemory            4G
+  driverCores             1
+  driverExtraClassPath    null
+  driverExtraLibraryPath  null
+  driverExtraJavaOptions  null
+  supervise               false
+  queue                   null
+  numExecutors            4
+  files                   null
+  pyFiles                 null
+  archives                null
+  mainClass               de.lukas_jansen.automl.Main
+  primaryResource         file:/wdir/automlproject/build/install/automlproject/lib/automlproject-0.0.1.jar
+  name                    automlproject:de.lukas_jansen.automl.Main
+  childArgs               [eval_phishing /wdir/phishing_test_headerfix.csv /resdir/phishing_model_3]
+  jars                    file:/wdir/automlproject/build/install/automlproject/lib/JavaEWAH-1.1.4.jar,file:/wdir/automlproject/build/install/automlproject/lib/akka-actor_2.11-2.3.11.jar,file:/wdir/automlproject/build/install/automlproject/lib/algebird-core_2.11-0.13.4.jar,file:/wdir/automlproject/build/install/automlproject/lib/algebra_2.11-0.7.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/annotations-12.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/automlproject-0.0.1.jar,file:/wdir/automlproject/build/install/automlproject/lib/bijection-avro_2.11-0.9.4.jar,file:/wdir/automlproject/build/install/automlproject/lib/bijection-core_2.11-0.9.4.jar,file:/wdir/automlproject/build/install/automlproject/lib/carrier-1.72.jar,file:/wdir/automlproject/build/install/automlproject/lib/cats-kernel_2.11-0.9.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/chill-algebird_2.11-0.9.3.jar,file:/wdir/automlproject/build/install/automlproject/lib/chill-avro_2.11-0.9.3.jar,file:/wdir/automlproject/build/install/automlproject/lib/chill-bijection_2.11-0.9.3.jar,file:/wdir/automlproject/build/install/automlproject/lib/chill-java-0.9.3.jar,file:/wdir/automlproject/build/install/automlproject/lib/chill_2.11-0.9.3.jar,file:/wdir/automlproject/build/install/automlproject/lib/commons-beanutils-1.9.2.jar,file:/wdir/automlproject/build/install/automlproject/lib/commons-collections-3.2.2.jar,file:/wdir/automlproject/build/install/automlproject/lib/commons-digester-1.8.1.jar,file:/wdir/automlproject/build/install/automlproject/lib/commons-io-2.6.jar,file:/wdir/automlproject/build/install/automlproject/lib/commons-logging-1.2.jar,file:/wdir/automlproject/build/install/automlproject/lib/commons-validator-1.6.jar,file:/wdir/automlproject/build/install/automlproject/lib/config-1.2.1.jar,file:/wdir/automlproject/build/install/automlproject/lib/enumeratum-macros_2.11-1.4.12.jar,file:/wdir/automlproject/build/install/automlproject/lib/enumeratum_2.11-1.4.12.jar,file:/wdir/automlproject/build/install/automlproject/lib/geocoder-2.82.jar,file:/wdir/automlproject/build/install/automlproject/lib/graph-core_2.11-1.12.5.jar,file:/wdir/automlproject/build/install/automlproject/lib/guava-14.0.1.jar,file:/wdir/automlproject/build/install/automlproject/lib/jackson-dataformat-yaml-2.7.3.jar,file:/wdir/automlproject/build/install/automlproject/lib/joda-convert-1.8.1.jar,file:/wdir/automlproject/build/install/automlproject/lib/joda-time-2.9.5.jar,file:/wdir/automlproject/build/install/automlproject/lib/json4s-ext_2.11-3.5.3.jar,file:/wdir/automlproject/build/install/automlproject/lib/jsonic-1.2.11.jar,file:/wdir/automlproject/build/install/automlproject/lib/kryo-shaded-4.0.2.jar,file:/wdir/automlproject/build/install/automlproject/lib/language-detector-0.0.1.jar,file:/wdir/automlproject/build/install/automlproject/lib/libphonenumber-8.8.5.jar,file:/wdir/automlproject/build/install/automlproject/lib/lucene-analyzers-common-7.3.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/lucene-analyzers-kuromoji-7.3.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/lucene-analyzers-opennlp-7.3.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/lucene-core-7.3.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/lucene-spatial3d-7.3.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/lucene-suggest-7.3.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/minlog-1.3.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/objenesis-2.5.1.jar,file:/wdir/automlproject/build/install/automlproject/lib/opennlp-maxent-3.0.3.jar,file:/wdir/automlproject/build/install/automlproject/lib/opennlp-tools-1.8.3.jar,file:/wdir/automlproject/build/install/automlproject/lib/prefixmapper-2.82.jar,file:/wdir/automlproject/build/install/automlproject/lib/scala-compiler-2.11.12.jar,file:/wdir/automlproject/build/install/automlproject/lib/scala-library-2.11.12.jar,file:/wdir/automlproject/build/install/automlproject/lib/scala-parser-combinators_2.11-1.0.4.jar,file:/wdir/automlproject/build/install/automlproject/lib/scala-reflect-2.11.12.jar,file:/wdir/automlproject/build/install/automlproject/lib/scala-xml_2.11-1.0.5.jar,file:/wdir/automlproject/build/install/automlproject/lib/scopt_2.11-3.5.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/slf4j-api-1.7.6.jar,file:/wdir/automlproject/build/install/automlproject/lib/snakeyaml-1.15.jar,file:/wdir/automlproject/build/install/automlproject/lib/sourcecode_2.11-0.1.3.jar,file:/wdir/automlproject/build/install/automlproject/lib/spark-avro_2.11-2.4.5.jar,file:/wdir/automlproject/build/install/automlproject/lib/spark-tags_2.11-2.4.5.jar,file:/wdir/automlproject/build/install/automlproject/lib/tika-core-1.22.jar,file:/wdir/automlproject/build/install/automlproject/lib/transmogrifai-core_2.11-0.7.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/transmogrifai-features_2.11-0.7.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/transmogrifai-readers_2.11-0.7.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/transmogrifai-utils_2.11-0.7.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/unused-1.0.0.jar,file:/wdir/automlproject/build/install/automlproject/lib/xgboost4j-0.90.jar,file:/wdir/automlproject/build/install/automlproject/lib/xgboost4j-spark-0.90.jar
+  packages                null
+  packagesExclusions      null
+  repositories            null
+  verbose                 true
+
+Spark properties used, including those specified through
+ --conf and those from the properties file /opt/bitnami/spark/conf/spark-defaults.conf:
+  (spark.driver.memory,4G)
+  (spark.serializer,org.apache.spark.serializer.KryoSerializer)
+  (spark.ui.reverseProxy,true)
+
+    
+21/11/12 14:36:01 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Main class:
+de.lukas_jansen.automl.Main
+Arguments:
+eval_phishing
+/wdir/phishing_test_headerfix.csv
+/resdir/phishing_model_3
+Spark config:
+(spark.serializer,org.apache.spark.serializer.KryoSerializer)
+(spark.jars,file:///wdir/automlproject/build/install/automlproject/lib/JavaEWAH-1.1.4.jar,file:///wdir/automlproject/build/install/automlproject/lib/akka-actor_2.11-2.3.11.jar,file:///wdir/automlproject/build/install/automlproject/lib/algebird-core_2.11-0.13.4.jar,file:///wdir/automlproject/build/install/automlproject/lib/algebra_2.11-0.7.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/annotations-12.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/automlproject-0.0.1.jar,file:///wdir/automlproject/build/install/automlproject/lib/bijection-avro_2.11-0.9.4.jar,file:///wdir/automlproject/build/install/automlproject/lib/bijection-core_2.11-0.9.4.jar,file:///wdir/automlproject/build/install/automlproject/lib/carrier-1.72.jar,file:///wdir/automlproject/build/install/automlproject/lib/cats-kernel_2.11-0.9.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/chill-algebird_2.11-0.9.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/chill-avro_2.11-0.9.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/chill-bijection_2.11-0.9.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/chill-java-0.9.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/chill_2.11-0.9.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/commons-beanutils-1.9.2.jar,file:///wdir/automlproject/build/install/automlproject/lib/commons-collections-3.2.2.jar,file:///wdir/automlproject/build/install/automlproject/lib/commons-digester-1.8.1.jar,file:///wdir/automlproject/build/install/automlproject/lib/commons-io-2.6.jar,file:///wdir/automlproject/build/install/automlproject/lib/commons-logging-1.2.jar,file:///wdir/automlproject/build/install/automlproject/lib/commons-validator-1.6.jar,file:///wdir/automlproject/build/install/automlproject/lib/config-1.2.1.jar,file:///wdir/automlproject/build/install/automlproject/lib/enumeratum-macros_2.11-1.4.12.jar,file:///wdir/automlproject/build/install/automlproject/lib/enumeratum_2.11-1.4.12.jar,file:///wdir/automlproject/build/install/automlproject/lib/geocoder-2.82.jar,file:///wdir/automlproject/build/install/automlproject/lib/graph-core_2.11-1.12.5.jar,file:///wdir/automlproject/build/install/automlproject/lib/guava-14.0.1.jar,file:///wdir/automlproject/build/install/automlproject/lib/jackson-dataformat-yaml-2.7.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/joda-convert-1.8.1.jar,file:///wdir/automlproject/build/install/automlproject/lib/joda-time-2.9.5.jar,file:///wdir/automlproject/build/install/automlproject/lib/json4s-ext_2.11-3.5.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/jsonic-1.2.11.jar,file:///wdir/automlproject/build/install/automlproject/lib/kryo-shaded-4.0.2.jar,file:///wdir/automlproject/build/install/automlproject/lib/language-detector-0.0.1.jar,file:///wdir/automlproject/build/install/automlproject/lib/libphonenumber-8.8.5.jar,file:///wdir/automlproject/build/install/automlproject/lib/lucene-analyzers-common-7.3.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/lucene-analyzers-kuromoji-7.3.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/lucene-analyzers-opennlp-7.3.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/lucene-core-7.3.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/lucene-spatial3d-7.3.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/lucene-suggest-7.3.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/minlog-1.3.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/objenesis-2.5.1.jar,file:///wdir/automlproject/build/install/automlproject/lib/opennlp-maxent-3.0.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/opennlp-tools-1.8.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/prefixmapper-2.82.jar,file:///wdir/automlproject/build/install/automlproject/lib/scala-compiler-2.11.12.jar,file:///wdir/automlproject/build/install/automlproject/lib/scala-library-2.11.12.jar,file:///wdir/automlproject/build/install/automlproject/lib/scala-parser-combinators_2.11-1.0.4.jar,file:///wdir/automlproject/build/install/automlproject/lib/scala-reflect-2.11.12.jar,file:///wdir/automlproject/build/install/automlproject/lib/scala-xml_2.11-1.0.5.jar,file:///wdir/automlproject/build/install/automlproject/lib/scopt_2.11-3.5.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/slf4j-api-1.7.6.jar,file:///wdir/automlproject/build/install/automlproject/lib/snakeyaml-1.15.jar,file:///wdir/automlproject/build/install/automlproject/lib/sourcecode_2.11-0.1.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/spark-avro_2.11-2.4.5.jar,file:///wdir/automlproject/build/install/automlproject/lib/spark-tags_2.11-2.4.5.jar,file:///wdir/automlproject/build/install/automlproject/lib/tika-core-1.22.jar,file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-core_2.11-0.7.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-features_2.11-0.7.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-readers_2.11-0.7.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-utils_2.11-0.7.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/unused-1.0.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/xgboost4j-0.90.jar,file:///wdir/automlproject/build/install/automlproject/lib/xgboost4j-spark-0.90.jar,file:/wdir/automlproject/build/install/automlproject/lib/automlproject-0.0.1.jar)
+(spark.app.name,automlproject:de.lukas_jansen.automl.Main)
+(spark.driver.memory,4G)
+(spark.ui.reverseProxy,true)
+(spark.submit.deployMode,client)
+(spark.master,spark://spark:7077)
+(spark.executor.memory,2G)
+(spark.executor.cores,1)
+(spark.repl.local.jars,file:///wdir/automlproject/build/install/automlproject/lib/JavaEWAH-1.1.4.jar,file:///wdir/automlproject/build/install/automlproject/lib/akka-actor_2.11-2.3.11.jar,file:///wdir/automlproject/build/install/automlproject/lib/algebird-core_2.11-0.13.4.jar,file:///wdir/automlproject/build/install/automlproject/lib/algebra_2.11-0.7.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/annotations-12.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/automlproject-0.0.1.jar,file:///wdir/automlproject/build/install/automlproject/lib/bijection-avro_2.11-0.9.4.jar,file:///wdir/automlproject/build/install/automlproject/lib/bijection-core_2.11-0.9.4.jar,file:///wdir/automlproject/build/install/automlproject/lib/carrier-1.72.jar,file:///wdir/automlproject/build/install/automlproject/lib/cats-kernel_2.11-0.9.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/chill-algebird_2.11-0.9.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/chill-avro_2.11-0.9.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/chill-bijection_2.11-0.9.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/chill-java-0.9.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/chill_2.11-0.9.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/commons-beanutils-1.9.2.jar,file:///wdir/automlproject/build/install/automlproject/lib/commons-collections-3.2.2.jar,file:///wdir/automlproject/build/install/automlproject/lib/commons-digester-1.8.1.jar,file:///wdir/automlproject/build/install/automlproject/lib/commons-io-2.6.jar,file:///wdir/automlproject/build/install/automlproject/lib/commons-logging-1.2.jar,file:///wdir/automlproject/build/install/automlproject/lib/commons-validator-1.6.jar,file:///wdir/automlproject/build/install/automlproject/lib/config-1.2.1.jar,file:///wdir/automlproject/build/install/automlproject/lib/enumeratum-macros_2.11-1.4.12.jar,file:///wdir/automlproject/build/install/automlproject/lib/enumeratum_2.11-1.4.12.jar,file:///wdir/automlproject/build/install/automlproject/lib/geocoder-2.82.jar,file:///wdir/automlproject/build/install/automlproject/lib/graph-core_2.11-1.12.5.jar,file:///wdir/automlproject/build/install/automlproject/lib/guava-14.0.1.jar,file:///wdir/automlproject/build/install/automlproject/lib/jackson-dataformat-yaml-2.7.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/joda-convert-1.8.1.jar,file:///wdir/automlproject/build/install/automlproject/lib/joda-time-2.9.5.jar,file:///wdir/automlproject/build/install/automlproject/lib/json4s-ext_2.11-3.5.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/jsonic-1.2.11.jar,file:///wdir/automlproject/build/install/automlproject/lib/kryo-shaded-4.0.2.jar,file:///wdir/automlproject/build/install/automlproject/lib/language-detector-0.0.1.jar,file:///wdir/automlproject/build/install/automlproject/lib/libphonenumber-8.8.5.jar,file:///wdir/automlproject/build/install/automlproject/lib/lucene-analyzers-common-7.3.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/lucene-analyzers-kuromoji-7.3.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/lucene-analyzers-opennlp-7.3.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/lucene-core-7.3.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/lucene-spatial3d-7.3.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/lucene-suggest-7.3.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/minlog-1.3.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/objenesis-2.5.1.jar,file:///wdir/automlproject/build/install/automlproject/lib/opennlp-maxent-3.0.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/opennlp-tools-1.8.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/prefixmapper-2.82.jar,file:///wdir/automlproject/build/install/automlproject/lib/scala-compiler-2.11.12.jar,file:///wdir/automlproject/build/install/automlproject/lib/scala-library-2.11.12.jar,file:///wdir/automlproject/build/install/automlproject/lib/scala-parser-combinators_2.11-1.0.4.jar,file:///wdir/automlproject/build/install/automlproject/lib/scala-reflect-2.11.12.jar,file:///wdir/automlproject/build/install/automlproject/lib/scala-xml_2.11-1.0.5.jar,file:///wdir/automlproject/build/install/automlproject/lib/scopt_2.11-3.5.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/slf4j-api-1.7.6.jar,file:///wdir/automlproject/build/install/automlproject/lib/snakeyaml-1.15.jar,file:///wdir/automlproject/build/install/automlproject/lib/sourcecode_2.11-0.1.3.jar,file:///wdir/automlproject/build/install/automlproject/lib/spark-avro_2.11-2.4.5.jar,file:///wdir/automlproject/build/install/automlproject/lib/spark-tags_2.11-2.4.5.jar,file:///wdir/automlproject/build/install/automlproject/lib/tika-core-1.22.jar,file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-core_2.11-0.7.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-features_2.11-0.7.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-readers_2.11-0.7.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-utils_2.11-0.7.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/unused-1.0.0.jar,file:///wdir/automlproject/build/install/automlproject/lib/xgboost4j-0.90.jar,file:///wdir/automlproject/build/install/automlproject/lib/xgboost4j-spark-0.90.jar)
+Classpath elements:
+file:/wdir/automlproject/build/install/automlproject/lib/automlproject-0.0.1.jar
+file:///wdir/automlproject/build/install/automlproject/lib/JavaEWAH-1.1.4.jar
+file:///wdir/automlproject/build/install/automlproject/lib/akka-actor_2.11-2.3.11.jar
+file:///wdir/automlproject/build/install/automlproject/lib/algebird-core_2.11-0.13.4.jar
+file:///wdir/automlproject/build/install/automlproject/lib/algebra_2.11-0.7.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/annotations-12.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/automlproject-0.0.1.jar
+file:///wdir/automlproject/build/install/automlproject/lib/bijection-avro_2.11-0.9.4.jar
+file:///wdir/automlproject/build/install/automlproject/lib/bijection-core_2.11-0.9.4.jar
+file:///wdir/automlproject/build/install/automlproject/lib/carrier-1.72.jar
+file:///wdir/automlproject/build/install/automlproject/lib/cats-kernel_2.11-0.9.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/chill-algebird_2.11-0.9.3.jar
+file:///wdir/automlproject/build/install/automlproject/lib/chill-avro_2.11-0.9.3.jar
+file:///wdir/automlproject/build/install/automlproject/lib/chill-bijection_2.11-0.9.3.jar
+file:///wdir/automlproject/build/install/automlproject/lib/chill-java-0.9.3.jar
+file:///wdir/automlproject/build/install/automlproject/lib/chill_2.11-0.9.3.jar
+file:///wdir/automlproject/build/install/automlproject/lib/commons-beanutils-1.9.2.jar
+file:///wdir/automlproject/build/install/automlproject/lib/commons-collections-3.2.2.jar
+file:///wdir/automlproject/build/install/automlproject/lib/commons-digester-1.8.1.jar
+file:///wdir/automlproject/build/install/automlproject/lib/commons-io-2.6.jar
+file:///wdir/automlproject/build/install/automlproject/lib/commons-logging-1.2.jar
+file:///wdir/automlproject/build/install/automlproject/lib/commons-validator-1.6.jar
+file:///wdir/automlproject/build/install/automlproject/lib/config-1.2.1.jar
+file:///wdir/automlproject/build/install/automlproject/lib/enumeratum-macros_2.11-1.4.12.jar
+file:///wdir/automlproject/build/install/automlproject/lib/enumeratum_2.11-1.4.12.jar
+file:///wdir/automlproject/build/install/automlproject/lib/geocoder-2.82.jar
+file:///wdir/automlproject/build/install/automlproject/lib/graph-core_2.11-1.12.5.jar
+file:///wdir/automlproject/build/install/automlproject/lib/guava-14.0.1.jar
+file:///wdir/automlproject/build/install/automlproject/lib/jackson-dataformat-yaml-2.7.3.jar
+file:///wdir/automlproject/build/install/automlproject/lib/joda-convert-1.8.1.jar
+file:///wdir/automlproject/build/install/automlproject/lib/joda-time-2.9.5.jar
+file:///wdir/automlproject/build/install/automlproject/lib/json4s-ext_2.11-3.5.3.jar
+file:///wdir/automlproject/build/install/automlproject/lib/jsonic-1.2.11.jar
+file:///wdir/automlproject/build/install/automlproject/lib/kryo-shaded-4.0.2.jar
+file:///wdir/automlproject/build/install/automlproject/lib/language-detector-0.0.1.jar
+file:///wdir/automlproject/build/install/automlproject/lib/libphonenumber-8.8.5.jar
+file:///wdir/automlproject/build/install/automlproject/lib/lucene-analyzers-common-7.3.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/lucene-analyzers-kuromoji-7.3.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/lucene-analyzers-opennlp-7.3.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/lucene-core-7.3.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/lucene-spatial3d-7.3.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/lucene-suggest-7.3.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/minlog-1.3.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/objenesis-2.5.1.jar
+file:///wdir/automlproject/build/install/automlproject/lib/opennlp-maxent-3.0.3.jar
+file:///wdir/automlproject/build/install/automlproject/lib/opennlp-tools-1.8.3.jar
+file:///wdir/automlproject/build/install/automlproject/lib/prefixmapper-2.82.jar
+file:///wdir/automlproject/build/install/automlproject/lib/scala-compiler-2.11.12.jar
+file:///wdir/automlproject/build/install/automlproject/lib/scala-library-2.11.12.jar
+file:///wdir/automlproject/build/install/automlproject/lib/scala-parser-combinators_2.11-1.0.4.jar
+file:///wdir/automlproject/build/install/automlproject/lib/scala-reflect-2.11.12.jar
+file:///wdir/automlproject/build/install/automlproject/lib/scala-xml_2.11-1.0.5.jar
+file:///wdir/automlproject/build/install/automlproject/lib/scopt_2.11-3.5.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/slf4j-api-1.7.6.jar
+file:///wdir/automlproject/build/install/automlproject/lib/snakeyaml-1.15.jar
+file:///wdir/automlproject/build/install/automlproject/lib/sourcecode_2.11-0.1.3.jar
+file:///wdir/automlproject/build/install/automlproject/lib/spark-avro_2.11-2.4.5.jar
+file:///wdir/automlproject/build/install/automlproject/lib/spark-tags_2.11-2.4.5.jar
+file:///wdir/automlproject/build/install/automlproject/lib/tika-core-1.22.jar
+file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-core_2.11-0.7.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-features_2.11-0.7.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-readers_2.11-0.7.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-utils_2.11-0.7.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/unused-1.0.0.jar
+file:///wdir/automlproject/build/install/automlproject/lib/xgboost4j-0.90.jar
+file:///wdir/automlproject/build/install/automlproject/lib/xgboost4j-spark-0.90.jar
+
+
+Starting
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/11/12 14:36:03 INFO SparkContext: Running Spark version 2.4.6
+21/11/12 14:36:03 INFO SparkContext: Submitted application: automlproject:de.lukas_jansen.automl.Main
+21/11/12 14:36:03 INFO SecurityManager: Changing view acls to: spark,hadoop
+21/11/12 14:36:03 INFO SecurityManager: Changing modify acls to: spark,hadoop
+21/11/12 14:36:03 INFO SecurityManager: Changing view acls groups to: 
+21/11/12 14:36:03 INFO SecurityManager: Changing modify acls groups to: 
+21/11/12 14:36:03 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(spark, hadoop); groups with modify permissions: Set()
+21/11/12 14:36:03 INFO Utils: Successfully started service 'sparkDriver' on port 36577.
+21/11/12 14:36:03 INFO SparkEnv: Registering MapOutputTracker
+21/11/12 14:36:03 INFO SparkEnv: Registering BlockManagerMaster
+21/11/12 14:36:03 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/11/12 14:36:03 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/11/12 14:36:03 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-dadac201-3303-479e-83ce-c9eb8e7fc802
+21/11/12 14:36:03 INFO MemoryStore: MemoryStore started with capacity 2004.6 MB
+21/11/12 14:36:03 INFO SparkEnv: Registering OutputCommitCoordinator
+21/11/12 14:36:03 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/11/12 14:36:04 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://547911f14550:4040
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/JavaEWAH-1.1.4.jar at spark://547911f14550:36577/jars/JavaEWAH-1.1.4.jar with timestamp 1636727764026
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/akka-actor_2.11-2.3.11.jar at spark://547911f14550:36577/jars/akka-actor_2.11-2.3.11.jar with timestamp 1636727764027
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/algebird-core_2.11-0.13.4.jar at spark://547911f14550:36577/jars/algebird-core_2.11-0.13.4.jar with timestamp 1636727764027
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/algebra_2.11-0.7.0.jar at spark://547911f14550:36577/jars/algebra_2.11-0.7.0.jar with timestamp 1636727764027
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/annotations-12.0.jar at spark://547911f14550:36577/jars/annotations-12.0.jar with timestamp 1636727764027
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/automlproject-0.0.1.jar at spark://547911f14550:36577/jars/automlproject-0.0.1.jar with timestamp 1636727764027
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/bijection-avro_2.11-0.9.4.jar at spark://547911f14550:36577/jars/bijection-avro_2.11-0.9.4.jar with timestamp 1636727764027
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/bijection-core_2.11-0.9.4.jar at spark://547911f14550:36577/jars/bijection-core_2.11-0.9.4.jar with timestamp 1636727764027
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/carrier-1.72.jar at spark://547911f14550:36577/jars/carrier-1.72.jar with timestamp 1636727764027
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/cats-kernel_2.11-0.9.0.jar at spark://547911f14550:36577/jars/cats-kernel_2.11-0.9.0.jar with timestamp 1636727764030
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/chill-algebird_2.11-0.9.3.jar at spark://547911f14550:36577/jars/chill-algebird_2.11-0.9.3.jar with timestamp 1636727764030
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/chill-avro_2.11-0.9.3.jar at spark://547911f14550:36577/jars/chill-avro_2.11-0.9.3.jar with timestamp 1636727764030
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/chill-bijection_2.11-0.9.3.jar at spark://547911f14550:36577/jars/chill-bijection_2.11-0.9.3.jar with timestamp 1636727764030
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/chill-java-0.9.3.jar at spark://547911f14550:36577/jars/chill-java-0.9.3.jar with timestamp 1636727764030
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/chill_2.11-0.9.3.jar at spark://547911f14550:36577/jars/chill_2.11-0.9.3.jar with timestamp 1636727764030
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/commons-beanutils-1.9.2.jar at spark://547911f14550:36577/jars/commons-beanutils-1.9.2.jar with timestamp 1636727764031
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/commons-collections-3.2.2.jar at spark://547911f14550:36577/jars/commons-collections-3.2.2.jar with timestamp 1636727764031
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/commons-digester-1.8.1.jar at spark://547911f14550:36577/jars/commons-digester-1.8.1.jar with timestamp 1636727764031
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/commons-io-2.6.jar at spark://547911f14550:36577/jars/commons-io-2.6.jar with timestamp 1636727764031
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/commons-logging-1.2.jar at spark://547911f14550:36577/jars/commons-logging-1.2.jar with timestamp 1636727764031
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/commons-validator-1.6.jar at spark://547911f14550:36577/jars/commons-validator-1.6.jar with timestamp 1636727764031
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/config-1.2.1.jar at spark://547911f14550:36577/jars/config-1.2.1.jar with timestamp 1636727764031
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/enumeratum-macros_2.11-1.4.12.jar at spark://547911f14550:36577/jars/enumeratum-macros_2.11-1.4.12.jar with timestamp 1636727764032
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/enumeratum_2.11-1.4.12.jar at spark://547911f14550:36577/jars/enumeratum_2.11-1.4.12.jar with timestamp 1636727764032
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/geocoder-2.82.jar at spark://547911f14550:36577/jars/geocoder-2.82.jar with timestamp 1636727764032
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/graph-core_2.11-1.12.5.jar at spark://547911f14550:36577/jars/graph-core_2.11-1.12.5.jar with timestamp 1636727764032
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/guava-14.0.1.jar at spark://547911f14550:36577/jars/guava-14.0.1.jar with timestamp 1636727764032
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/jackson-dataformat-yaml-2.7.3.jar at spark://547911f14550:36577/jars/jackson-dataformat-yaml-2.7.3.jar with timestamp 1636727764032
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/joda-convert-1.8.1.jar at spark://547911f14550:36577/jars/joda-convert-1.8.1.jar with timestamp 1636727764032
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/joda-time-2.9.5.jar at spark://547911f14550:36577/jars/joda-time-2.9.5.jar with timestamp 1636727764032
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/json4s-ext_2.11-3.5.3.jar at spark://547911f14550:36577/jars/json4s-ext_2.11-3.5.3.jar with timestamp 1636727764032
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/jsonic-1.2.11.jar at spark://547911f14550:36577/jars/jsonic-1.2.11.jar with timestamp 1636727764032
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/kryo-shaded-4.0.2.jar at spark://547911f14550:36577/jars/kryo-shaded-4.0.2.jar with timestamp 1636727764033
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/language-detector-0.0.1.jar at spark://547911f14550:36577/jars/language-detector-0.0.1.jar with timestamp 1636727764033
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/libphonenumber-8.8.5.jar at spark://547911f14550:36577/jars/libphonenumber-8.8.5.jar with timestamp 1636727764033
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/lucene-analyzers-common-7.3.0.jar at spark://547911f14550:36577/jars/lucene-analyzers-common-7.3.0.jar with timestamp 1636727764033
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/lucene-analyzers-kuromoji-7.3.0.jar at spark://547911f14550:36577/jars/lucene-analyzers-kuromoji-7.3.0.jar with timestamp 1636727764033
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/lucene-analyzers-opennlp-7.3.0.jar at spark://547911f14550:36577/jars/lucene-analyzers-opennlp-7.3.0.jar with timestamp 1636727764033
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/lucene-core-7.3.0.jar at spark://547911f14550:36577/jars/lucene-core-7.3.0.jar with timestamp 1636727764033
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/lucene-spatial3d-7.3.0.jar at spark://547911f14550:36577/jars/lucene-spatial3d-7.3.0.jar with timestamp 1636727764034
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/lucene-suggest-7.3.0.jar at spark://547911f14550:36577/jars/lucene-suggest-7.3.0.jar with timestamp 1636727764034
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/minlog-1.3.0.jar at spark://547911f14550:36577/jars/minlog-1.3.0.jar with timestamp 1636727764034
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/objenesis-2.5.1.jar at spark://547911f14550:36577/jars/objenesis-2.5.1.jar with timestamp 1636727764034
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/opennlp-maxent-3.0.3.jar at spark://547911f14550:36577/jars/opennlp-maxent-3.0.3.jar with timestamp 1636727764034
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/opennlp-tools-1.8.3.jar at spark://547911f14550:36577/jars/opennlp-tools-1.8.3.jar with timestamp 1636727764034
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/prefixmapper-2.82.jar at spark://547911f14550:36577/jars/prefixmapper-2.82.jar with timestamp 1636727764034
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/scala-compiler-2.11.12.jar at spark://547911f14550:36577/jars/scala-compiler-2.11.12.jar with timestamp 1636727764035
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/scala-library-2.11.12.jar at spark://547911f14550:36577/jars/scala-library-2.11.12.jar with timestamp 1636727764035
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/scala-parser-combinators_2.11-1.0.4.jar at spark://547911f14550:36577/jars/scala-parser-combinators_2.11-1.0.4.jar with timestamp 1636727764035
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/scala-reflect-2.11.12.jar at spark://547911f14550:36577/jars/scala-reflect-2.11.12.jar with timestamp 1636727764035
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/scala-xml_2.11-1.0.5.jar at spark://547911f14550:36577/jars/scala-xml_2.11-1.0.5.jar with timestamp 1636727764035
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/scopt_2.11-3.5.0.jar at spark://547911f14550:36577/jars/scopt_2.11-3.5.0.jar with timestamp 1636727764035
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/slf4j-api-1.7.6.jar at spark://547911f14550:36577/jars/slf4j-api-1.7.6.jar with timestamp 1636727764035
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/snakeyaml-1.15.jar at spark://547911f14550:36577/jars/snakeyaml-1.15.jar with timestamp 1636727764035
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/sourcecode_2.11-0.1.3.jar at spark://547911f14550:36577/jars/sourcecode_2.11-0.1.3.jar with timestamp 1636727764036
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/spark-avro_2.11-2.4.5.jar at spark://547911f14550:36577/jars/spark-avro_2.11-2.4.5.jar with timestamp 1636727764036
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/spark-tags_2.11-2.4.5.jar at spark://547911f14550:36577/jars/spark-tags_2.11-2.4.5.jar with timestamp 1636727764036
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/tika-core-1.22.jar at spark://547911f14550:36577/jars/tika-core-1.22.jar with timestamp 1636727764036
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-core_2.11-0.7.0.jar at spark://547911f14550:36577/jars/transmogrifai-core_2.11-0.7.0.jar with timestamp 1636727764036
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-features_2.11-0.7.0.jar at spark://547911f14550:36577/jars/transmogrifai-features_2.11-0.7.0.jar with timestamp 1636727764036
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-readers_2.11-0.7.0.jar at spark://547911f14550:36577/jars/transmogrifai-readers_2.11-0.7.0.jar with timestamp 1636727764036
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/transmogrifai-utils_2.11-0.7.0.jar at spark://547911f14550:36577/jars/transmogrifai-utils_2.11-0.7.0.jar with timestamp 1636727764036
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/unused-1.0.0.jar at spark://547911f14550:36577/jars/unused-1.0.0.jar with timestamp 1636727764036
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/xgboost4j-0.90.jar at spark://547911f14550:36577/jars/xgboost4j-0.90.jar with timestamp 1636727764036
+21/11/12 14:36:04 INFO SparkContext: Added JAR file:///wdir/automlproject/build/install/automlproject/lib/xgboost4j-spark-0.90.jar at spark://547911f14550:36577/jars/xgboost4j-spark-0.90.jar with timestamp 1636727764036
+21/11/12 14:36:04 WARN SparkContext: The jar file:/wdir/automlproject/build/install/automlproject/lib/automlproject-0.0.1.jar has been added already. Overwriting of added jars is not supported in the current version.
+21/11/12 14:36:04 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark:7077...
+21/11/12 14:36:04 INFO TransportClientFactory: Successfully created connection to spark/172.18.0.3:7077 after 35 ms (0 ms spent in bootstraps)
+21/11/12 14:36:04 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20211112143604-0011
+21/11/12 14:36:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20211112143604-0011/0 on worker-20211112122649-172.18.0.2-33633 (172.18.0.2:33633) with 1 core(s)
+21/11/12 14:36:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20211112143604-0011/0 on hostPort 172.18.0.2:33633 with 1 core(s), 2.0 GB RAM
+21/11/12 14:36:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20211112143604-0011/1 on worker-20211112122649-172.18.0.2-33633 (172.18.0.2:33633) with 1 core(s)
+21/11/12 14:36:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20211112143604-0011/1 on hostPort 172.18.0.2:33633 with 1 core(s), 2.0 GB RAM
+21/11/12 14:36:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20211112143604-0011/2 on worker-20211112122649-172.18.0.2-33633 (172.18.0.2:33633) with 1 core(s)
+21/11/12 14:36:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20211112143604-0011/2 on hostPort 172.18.0.2:33633 with 1 core(s), 2.0 GB RAM
+21/11/12 14:36:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20211112143604-0011/3 on worker-20211112122649-172.18.0.2-33633 (172.18.0.2:33633) with 1 core(s)
+21/11/12 14:36:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20211112143604-0011/3 on hostPort 172.18.0.2:33633 with 1 core(s), 2.0 GB RAM
+21/11/12 14:36:04 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39587.
+21/11/12 14:36:04 INFO NettyBlockTransferService: Server created on 547911f14550:39587
+21/11/12 14:36:04 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/11/12 14:36:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20211112143604-0011/0 is now RUNNING
+21/11/12 14:36:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20211112143604-0011/1 is now RUNNING
+21/11/12 14:36:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20211112143604-0011/2 is now RUNNING
+21/11/12 14:36:04 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20211112143604-0011/3 is now RUNNING
+21/11/12 14:36:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 547911f14550, 39587, None)
+21/11/12 14:36:04 INFO BlockManagerMasterEndpoint: Registering block manager 547911f14550:39587 with 2004.6 MB RAM, BlockManagerId(driver, 547911f14550, 39587, None)
+21/11/12 14:36:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 547911f14550, 39587, None)
+21/11/12 14:36:04 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 547911f14550, 39587, None)
+21/11/12 14:36:04 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+Evaluating Phishing...
+21/11/12 14:36:08 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 236.7 KB, free 2004.4 MB)
+21/11/12 14:36:08 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 22.9 KB, free 2004.3 MB)
+21/11/12 14:36:08 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 547911f14550:39587 (size: 22.9 KB, free: 2004.6 MB)
+21/11/12 14:36:08 INFO SparkContext: Created broadcast 0 from textFile at OpWorkflowModelReader.scala:64
+21/11/12 14:36:08 INFO FileInputFormat: Total input paths to process : 1
+21/11/12 14:36:08 INFO SparkContext: Starting job: collect at OpWorkflowModelReader.scala:64
+21/11/12 14:36:08 INFO DAGScheduler: Got job 0 (collect at OpWorkflowModelReader.scala:64) with 1 output partitions
+21/11/12 14:36:08 INFO DAGScheduler: Final stage: ResultStage 0 (collect at OpWorkflowModelReader.scala:64)
+21/11/12 14:36:08 INFO DAGScheduler: Parents of final stage: List()
+21/11/12 14:36:08 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:08 INFO DAGScheduler: Submitting ResultStage 0 (/resdir/phishing_model_3/op-model.json MapPartitionsRDD[1] at textFile at OpWorkflowModelReader.scala:64), which has no missing parents
+21/11/12 14:36:08 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 3.6 KB, free 2004.3 MB)
+21/11/12 14:36:09 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.1 KB, free 2004.3 MB)
+21/11/12 14:36:09 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 547911f14550:39587 (size: 2.1 KB, free: 2004.6 MB)
+21/11/12 14:36:09 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:09 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (/resdir/phishing_model_3/op-model.json MapPartitionsRDD[1] at textFile at OpWorkflowModelReader.scala:64) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:09 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+21/11/12 14:36:09 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.2:38644) with ID 3
+21/11/12 14:36:09 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, 172.18.0.2, executor 3, partition 0, PROCESS_LOCAL, 7921 bytes)
+21/11/12 14:36:10 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.2:38648) with ID 1
+21/11/12 14:36:10 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.2:35935 with 912.3 MB RAM, BlockManagerId(3, 172.18.0.2, 35935, None)
+21/11/12 14:36:10 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.2:38650) with ID 0
+21/11/12 14:36:10 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.2:39375 with 912.3 MB RAM, BlockManagerId(1, 172.18.0.2, 39375, None)
+21/11/12 14:36:10 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.2:33055 with 912.3 MB RAM, BlockManagerId(0, 172.18.0.2, 33055, None)
+21/11/12 14:36:10 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.2:38656) with ID 2
+21/11/12 14:36:11 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.2:44369 with 912.3 MB RAM, BlockManagerId(2, 172.18.0.2, 44369, None)
+21/11/12 14:36:12 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 172.18.0.2:35935 (size: 2.1 KB, free: 912.3 MB)
+21/11/12 14:36:12 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.18.0.2:35935 (size: 22.9 KB, free: 912.3 MB)
+21/11/12 14:36:12 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 2949 ms on 172.18.0.2 (executor 3) (1/1)
+21/11/12 14:36:12 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+21/11/12 14:36:12 INFO DAGScheduler: ResultStage 0 (collect at OpWorkflowModelReader.scala:64) finished in 3.950 s
+21/11/12 14:36:12 INFO DAGScheduler: Job 0 finished: collect at OpWorkflowModelReader.scala:64, took 4.069645 s
+21/11/12 14:36:13 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 547911f14550:39587 in memory (size: 22.9 KB, free: 2004.6 MB)
+21/11/12 14:36:13 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 172.18.0.2:35935 in memory (size: 22.9 KB, free: 912.3 MB)
+21/11/12 14:36:13 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 236.7 KB, free 2004.4 MB)
+21/11/12 14:36:13 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 22.9 KB, free 2004.3 MB)
+21/11/12 14:36:13 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 547911f14550:39587 (size: 22.9 KB, free: 2004.6 MB)
+21/11/12 14:36:13 INFO SparkContext: Created broadcast 2 from textFile at ReadWrite.scala:615
+21/11/12 14:36:13 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 172.18.0.2:35935 in memory (size: 2.1 KB, free: 912.3 MB)
+21/11/12 14:36:13 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 547911f14550:39587 in memory (size: 2.1 KB, free: 2004.6 MB)
+21/11/12 14:36:13 INFO FileInputFormat: Total input paths to process : 1
+21/11/12 14:36:13 INFO SparkContext: Starting job: first at ReadWrite.scala:615
+21/11/12 14:36:13 INFO DAGScheduler: Got job 1 (first at ReadWrite.scala:615) with 1 output partitions
+21/11/12 14:36:13 INFO DAGScheduler: Final stage: ResultStage 1 (first at ReadWrite.scala:615)
+21/11/12 14:36:13 INFO DAGScheduler: Parents of final stage: List()
+21/11/12 14:36:13 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:13 INFO DAGScheduler: Submitting ResultStage 1 (/resdir/phishing_model_3/dtc_d8a314f27d53/metadata MapPartitionsRDD[3] at textFile at ReadWrite.scala:615), which has no missing parents
+21/11/12 14:36:13 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 3.6 KB, free 2004.3 MB)
+21/11/12 14:36:13 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 2.1 KB, free 2004.3 MB)
+21/11/12 14:36:13 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 547911f14550:39587 (size: 2.1 KB, free: 2004.6 MB)
+21/11/12 14:36:13 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:13 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (/resdir/phishing_model_3/dtc_d8a314f27d53/metadata MapPartitionsRDD[3] at textFile at ReadWrite.scala:615) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:13 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks
+21/11/12 14:36:13 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, 172.18.0.2, executor 1, partition 0, PROCESS_LOCAL, 7930 bytes)
+21/11/12 14:36:14 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 172.18.0.2:39375 (size: 2.1 KB, free: 912.3 MB)
+21/11/12 14:36:14 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 172.18.0.2:39375 (size: 22.9 KB, free: 912.3 MB)
+21/11/12 14:36:15 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 1444 ms on 172.18.0.2 (executor 1) (1/1)
+21/11/12 14:36:15 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+21/11/12 14:36:15 INFO DAGScheduler: ResultStage 1 (first at ReadWrite.scala:615) finished in 1.455 s
+21/11/12 14:36:15 INFO DAGScheduler: Job 1 finished: first at ReadWrite.scala:615, took 1.457644 s
+21/11/12 14:36:15 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/opt/bitnami/spark/spark-warehouse').
+21/11/12 14:36:15 INFO SharedState: Warehouse path is 'file:/opt/bitnami/spark/spark-warehouse'.
+21/11/12 14:36:15 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+21/11/12 14:36:15 INFO InMemoryFileIndex: It took 9 ms to list leaf files for 1 paths.
+21/11/12 14:36:15 INFO SparkContext: Starting job: parquet at treeModels.scala:341
+21/11/12 14:36:15 INFO DAGScheduler: Got job 2 (parquet at treeModels.scala:341) with 1 output partitions
+21/11/12 14:36:15 INFO DAGScheduler: Final stage: ResultStage 2 (parquet at treeModels.scala:341)
+21/11/12 14:36:15 INFO DAGScheduler: Parents of final stage: List()
+21/11/12 14:36:15 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:15 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[5] at parquet at treeModels.scala:341), which has no missing parents
+21/11/12 14:36:15 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 81.5 KB, free 2004.3 MB)
+21/11/12 14:36:15 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 27.6 KB, free 2004.2 MB)
+21/11/12 14:36:15 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 547911f14550:39587 (size: 27.6 KB, free: 2004.5 MB)
+21/11/12 14:36:15 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:15 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[5] at parquet at treeModels.scala:341) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:15 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
+21/11/12 14:36:15 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, 172.18.0.2, executor 3, partition 0, PROCESS_LOCAL, 7854 bytes)
+21/11/12 14:36:15 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 172.18.0.2:35935 (size: 27.6 KB, free: 912.3 MB)
+21/11/12 14:36:15 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 224 ms on 172.18.0.2 (executor 3) (1/1)
+21/11/12 14:36:15 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+21/11/12 14:36:15 INFO DAGScheduler: ResultStage 2 (parquet at treeModels.scala:341) finished in 0.250 s
+21/11/12 14:36:15 INFO DAGScheduler: Job 2 finished: parquet at treeModels.scala:341, took 0.253327 s
+21/11/12 14:36:16 INFO FileSourceStrategy: Pruning directories with: 
+21/11/12 14:36:16 INFO FileSourceStrategy: Post-Scan Filters: 
+21/11/12 14:36:16 INFO FileSourceStrategy: Output Data Schema: struct<id: int, prediction: double, impurity: double, impurityStats: array<double>, gain: double ... 6 more fields>
+21/11/12 14:36:16 INFO FileSourceScanExec: Pushed Filters: 
+21/11/12 14:36:16 INFO CodeGenerator: Code generated in 222.459017 ms
+21/11/12 14:36:16 INFO CodeGenerator: Code generated in 33.641454 ms
+21/11/12 14:36:16 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 304.9 KB, free 2003.9 MB)
+21/11/12 14:36:16 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 26.8 KB, free 2003.9 MB)
+21/11/12 14:36:16 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 547911f14550:39587 (size: 26.8 KB, free: 2004.5 MB)
+21/11/12 14:36:16 INFO SparkContext: Created broadcast 5 from collect at treeModels.scala:342
+21/11/12 14:36:16 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+21/11/12 14:36:16 INFO SparkContext: Starting job: collect at treeModels.scala:342
+21/11/12 14:36:16 INFO DAGScheduler: Got job 3 (collect at treeModels.scala:342) with 1 output partitions
+21/11/12 14:36:16 INFO DAGScheduler: Final stage: ResultStage 3 (collect at treeModels.scala:342)
+21/11/12 14:36:16 INFO DAGScheduler: Parents of final stage: List()
+21/11/12 14:36:16 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:16 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[8] at collect at treeModels.scala:342), which has no missing parents
+21/11/12 14:36:16 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 13.2 KB, free 2003.9 MB)
+21/11/12 14:36:16 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 5.7 KB, free 2003.9 MB)
+21/11/12 14:36:16 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 547911f14550:39587 (size: 5.7 KB, free: 2004.5 MB)
+21/11/12 14:36:16 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:16 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[8] at collect at treeModels.scala:342) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:16 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks
+21/11/12 14:36:16 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3, 172.18.0.2, executor 1, partition 0, PROCESS_LOCAL, 8341 bytes)
+21/11/12 14:36:16 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 172.18.0.2:39375 (size: 5.7 KB, free: 912.3 MB)
+21/11/12 14:36:17 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 172.18.0.2:39375 (size: 26.8 KB, free: 912.2 MB)
+21/11/12 14:36:17 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 1065 ms on 172.18.0.2 (executor 1) (1/1)
+21/11/12 14:36:17 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+21/11/12 14:36:17 INFO DAGScheduler: ResultStage 3 (collect at treeModels.scala:342) finished in 1.071 s
+21/11/12 14:36:17 INFO DAGScheduler: Job 3 finished: collect at treeModels.scala:342, took 1.077174 s
+21/11/12 14:36:17 INFO OpWorkflowModel: Note that stage params have no effect on workflow models once trained: Map()
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 65
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 71
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 33
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 38
+21/11/12 14:36:18 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 172.18.0.2:35935 in memory (size: 27.6 KB, free: 912.3 MB)
+21/11/12 14:36:18 INFO OpWorkflowModel: Readers for types: Phishing do not have an override path in readerParams, so the default will be used
+21/11/12 14:36:18 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 547911f14550:39587 in memory (size: 27.6 KB, free: 2004.5 MB)
+21/11/12 14:36:18 INFO InMemoryFileIndex: It took 1 ms to list leaf files for 1 paths.
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 49
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 62
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 42
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 102
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 40
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 35
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 88
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 25
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 43
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 45
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 30
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 85
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 104
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 58
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 44
+21/11/12 14:36:18 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 172.18.0.2:39375 in memory (size: 2.1 KB, free: 912.2 MB)
+21/11/12 14:36:18 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 547911f14550:39587 in memory (size: 2.1 KB, free: 2004.5 MB)
+21/11/12 14:36:18 INFO InMemoryFileIndex: It took 4 ms to list leaf files for 2 paths.
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 72
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 92
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 96
+21/11/12 14:36:18 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 172.18.0.2:39375 in memory (size: 26.8 KB, free: 912.3 MB)
+21/11/12 14:36:18 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 547911f14550:39587 in memory (size: 26.8 KB, free: 2004.6 MB)
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 73
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 41
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 52
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 70
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 39
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 75
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 77
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 27
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 29
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 46
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 98
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 28
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 69
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 59
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 66
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 89
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 37
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 55
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 57
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 60
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 48
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 94
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 83
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 51
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 36
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 76
+21/11/12 14:36:18 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 172.18.0.2:39375 in memory (size: 5.7 KB, free: 912.3 MB)
+21/11/12 14:36:18 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 547911f14550:39587 in memory (size: 5.7 KB, free: 2004.6 MB)
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 53
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 86
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 34
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 91
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 82
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 56
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 54
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 61
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 84
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 103
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 68
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 87
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 80
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 63
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 74
+21/11/12 14:36:18 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 547911f14550:39587 in memory (size: 22.9 KB, free: 2004.6 MB)
+21/11/12 14:36:18 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 172.18.0.2:39375 in memory (size: 22.9 KB, free: 912.3 MB)
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 50
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 90
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 81
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 93
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 26
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 95
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 67
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 64
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 99
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 31
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 97
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 32
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 78
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 79
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 47
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 101
+21/11/12 14:36:18 INFO ContextCleaner: Cleaned accumulator 100
+21/11/12 14:36:18 INFO FileSourceStrategy: Pruning directories with: 
+21/11/12 14:36:18 INFO FileSourceStrategy: Post-Scan Filters: (length(trim(value#32, None)) > 0)
+21/11/12 14:36:18 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+21/11/12 14:36:18 INFO FileSourceScanExec: Pushed Filters: 
+21/11/12 14:36:18 INFO CodeGenerator: Code generated in 8.903764 ms
+21/11/12 14:36:18 INFO CodeGenerator: Code generated in 11.50942 ms
+21/11/12 14:36:18 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 300.4 KB, free 2004.3 MB)
+21/11/12 14:36:18 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 26.0 KB, free 2004.3 MB)
+21/11/12 14:36:18 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 547911f14550:39587 (size: 26.0 KB, free: 2004.6 MB)
+21/11/12 14:36:18 INFO SparkContext: Created broadcast 7 from load at CSVInOut.scala:51
+21/11/12 14:36:18 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+21/11/12 14:36:18 INFO SparkContext: Starting job: load at CSVInOut.scala:51
+21/11/12 14:36:18 INFO DAGScheduler: Got job 4 (load at CSVInOut.scala:51) with 1 output partitions
+21/11/12 14:36:18 INFO DAGScheduler: Final stage: ResultStage 4 (load at CSVInOut.scala:51)
+21/11/12 14:36:18 INFO DAGScheduler: Parents of final stage: List()
+21/11/12 14:36:18 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:18 INFO DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[12] at load at CSVInOut.scala:51), which has no missing parents
+21/11/12 14:36:18 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 8.9 KB, free 2004.3 MB)
+21/11/12 14:36:18 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 4.6 KB, free 2004.3 MB)
+21/11/12 14:36:18 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 547911f14550:39587 (size: 4.6 KB, free: 2004.6 MB)
+21/11/12 14:36:18 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:18 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[12] at load at CSVInOut.scala:51) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:18 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks
+21/11/12 14:36:18 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 4, 172.18.0.2, executor 1, partition 0, PROCESS_LOCAL, 8260 bytes)
+21/11/12 14:36:18 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 172.18.0.2:39375 (size: 4.6 KB, free: 912.3 MB)
+21/11/12 14:36:18 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 172.18.0.2:39375 (size: 26.0 KB, free: 912.3 MB)
+21/11/12 14:36:18 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 4) in 109 ms on 172.18.0.2 (executor 1) (1/1)
+21/11/12 14:36:18 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+21/11/12 14:36:18 INFO DAGScheduler: ResultStage 4 (load at CSVInOut.scala:51) finished in 0.121 s
+21/11/12 14:36:18 INFO DAGScheduler: Job 4 finished: load at CSVInOut.scala:51, took 0.124857 s
+21/11/12 14:36:18 INFO FileSourceStrategy: Pruning directories with: 
+21/11/12 14:36:18 INFO FileSourceStrategy: Post-Scan Filters: 
+21/11/12 14:36:18 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+21/11/12 14:36:18 INFO FileSourceScanExec: Pushed Filters: 
+21/11/12 14:36:18 INFO CodeGenerator: Code generated in 7.696455 ms
+21/11/12 14:36:18 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 300.4 KB, free 2004.0 MB)
+21/11/12 14:36:18 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 26.0 KB, free 2003.9 MB)
+21/11/12 14:36:18 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 547911f14550:39587 (size: 26.0 KB, free: 2004.5 MB)
+21/11/12 14:36:18 INFO SparkContext: Created broadcast 9 from load at CSVInOut.scala:51
+21/11/12 14:36:18 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+21/11/12 14:36:18 INFO FileSourceStrategy: Pruning directories with: 
+21/11/12 14:36:18 INFO FileSourceStrategy: Post-Scan Filters: 
+21/11/12 14:36:18 INFO FileSourceStrategy: Output Data Schema: struct<_c0: string, _c1: string, _c2: string, _c3: string, _c4: string ... 30 more fields>
+21/11/12 14:36:18 INFO FileSourceScanExec: Pushed Filters: 
+21/11/12 14:36:18 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 300.4 KB, free 2003.7 MB)
+21/11/12 14:36:18 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 26.0 KB, free 2003.6 MB)
+21/11/12 14:36:18 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 547911f14550:39587 (size: 26.0 KB, free: 2004.5 MB)
+21/11/12 14:36:18 INFO SparkContext: Created broadcast 10 from rdd at CSVInOut.scala:65
+21/11/12 14:36:18 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+21/11/12 14:36:18 INFO SparkContext: Starting job: first at CSVAutoReaders.scala:72
+21/11/12 14:36:18 INFO DAGScheduler: Got job 5 (first at CSVAutoReaders.scala:72) with 1 output partitions
+21/11/12 14:36:18 INFO DAGScheduler: Final stage: ResultStage 5 (first at CSVAutoReaders.scala:72)
+21/11/12 14:36:18 INFO DAGScheduler: Parents of final stage: List()
+21/11/12 14:36:18 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:18 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[24] at rdd at CSVInOut.scala:65), which has no missing parents
+21/11/12 14:36:18 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 31.5 KB, free 2003.6 MB)
+21/11/12 14:36:18 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 10.0 KB, free 2003.6 MB)
+21/11/12 14:36:18 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 547911f14550:39587 (size: 10.0 KB, free: 2004.5 MB)
+21/11/12 14:36:18 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:18 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[24] at rdd at CSVInOut.scala:65) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:18 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks
+21/11/12 14:36:18 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 5, 172.18.0.2, executor 0, partition 0, PROCESS_LOCAL, 8260 bytes)
+21/11/12 14:36:19 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 172.18.0.2:33055 (size: 10.0 KB, free: 912.3 MB)
+21/11/12 14:36:21 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 172.18.0.2:33055 (size: 26.0 KB, free: 912.3 MB)
+21/11/12 14:36:21 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 5) in 2959 ms on 172.18.0.2 (executor 0) (1/1)
+21/11/12 14:36:21 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+21/11/12 14:36:21 INFO DAGScheduler: ResultStage 5 (first at CSVAutoReaders.scala:72) finished in 2.969 s
+21/11/12 14:36:21 INFO DAGScheduler: Job 5 finished: first at CSVAutoReaders.scala:72, took 2.970870 s
+21/11/12 14:36:21 INFO SparkContext: Starting job: infer at CSVAutoReaders.scala:77
+21/11/12 14:36:21 INFO DAGScheduler: Got job 6 (infer at CSVAutoReaders.scala:77) with 1 output partitions
+21/11/12 14:36:21 INFO DAGScheduler: Final stage: ResultStage 6 (infer at CSVAutoReaders.scala:77)
+21/11/12 14:36:21 INFO DAGScheduler: Parents of final stage: List()
+21/11/12 14:36:21 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:21 INFO DAGScheduler: Submitting ResultStage 6 (MapPartitionsRDD[26] at map at CSVAutoReaders.scala:77), which has no missing parents
+21/11/12 14:36:21 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 33.4 KB, free 2003.6 MB)
+21/11/12 14:36:21 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 11.3 KB, free 2003.5 MB)
+21/11/12 14:36:21 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 547911f14550:39587 (size: 11.3 KB, free: 2004.5 MB)
+21/11/12 14:36:21 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:21 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 6 (MapPartitionsRDD[26] at map at CSVAutoReaders.scala:77) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:21 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks
+21/11/12 14:36:21 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 6, 172.18.0.2, executor 3, partition 0, PROCESS_LOCAL, 8260 bytes)
+21/11/12 14:36:21 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 172.18.0.2:35935 (size: 11.3 KB, free: 912.3 MB)
+21/11/12 14:36:23 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 172.18.0.2:35935 (size: 26.0 KB, free: 912.3 MB)
+21/11/12 14:36:23 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 6) in 1795 ms on 172.18.0.2 (executor 3) (1/1)
+21/11/12 14:36:23 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+21/11/12 14:36:23 INFO DAGScheduler: ResultStage 6 (infer at CSVAutoReaders.scala:77) finished in 1.804 s
+21/11/12 14:36:23 INFO DAGScheduler: Job 6 finished: infer at CSVAutoReaders.scala:77, took 1.808677 s
+21/11/12 14:36:23 INFO FitStagesUtil: Applying 1 OP stage(s): OpSetVectorizer_00000000004f
+21/11/12 14:36:23 WARN Utils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.debug.maxToStringFields' in SparkEnv.conf.
+21/11/12 14:36:23 INFO FitStagesUtil: Applying 2 OP stage(s): OpSetVectorizer_000000000052,VectorsCombiner_000000000050
+21/11/12 14:36:23 INFO MapPartitionsRDD: Removing RDD 41 from persistence list
+21/11/12 14:36:23 INFO BlockManager: Removing RDD 41
+21/11/12 14:36:23 INFO FitStagesUtil: Applying 2 OP stage(s): VectorsCombiner_000000000053,UnaryLambdaTransformer_000000000051
+21/11/12 14:36:23 INFO MapPartitionsRDD: Removing RDD 51 from persistence list
+21/11/12 14:36:23 INFO FitStagesUtil: Applying 1 OP stage(s): SanityChecker_000000000054
+21/11/12 14:36:23 INFO BlockManager: Removing RDD 51
+21/11/12 14:36:23 INFO MapPartitionsRDD: Removing RDD 61 from persistence list
+21/11/12 14:36:23 INFO FitStagesUtil: Applying 1 OP stage(s): ModelSelector_000000000060
+21/11/12 14:36:23 INFO BlockManager: Removing RDD 61
+21/11/12 14:36:24 INFO MapPartitionsRDD: Removing RDD 71 from persistence list
+21/11/12 14:36:24 INFO BlockManager: Removing RDD 71
+21/11/12 14:36:24 INFO CodeGenerator: Code generated in 25.050839 ms
+21/11/12 14:36:24 INFO SparkContext: Starting job: isEmpty at OpBinaryClassificationEvaluator.scala:82
+21/11/12 14:36:24 INFO DAGScheduler: Got job 7 (isEmpty at OpBinaryClassificationEvaluator.scala:82) with 1 output partitions
+21/11/12 14:36:24 INFO DAGScheduler: Final stage: ResultStage 7 (isEmpty at OpBinaryClassificationEvaluator.scala:82)
+21/11/12 14:36:24 INFO DAGScheduler: Parents of final stage: List()
+21/11/12 14:36:24 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:24 INFO DAGScheduler: Submitting ResultStage 7 (MapPartitionsRDD[93] at rdd at OpBinaryClassificationEvaluator.scala:80), which has no missing parents
+21/11/12 14:36:24 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 652.6 KB, free 2002.9 MB)
+21/11/12 14:36:24 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 141.3 KB, free 2002.8 MB)
+21/11/12 14:36:24 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 547911f14550:39587 (size: 141.3 KB, free: 2004.4 MB)
+21/11/12 14:36:24 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:24 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 7 (MapPartitionsRDD[93] at rdd at OpBinaryClassificationEvaluator.scala:80) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:24 INFO TaskSchedulerImpl: Adding task set 7.0 with 1 tasks
+21/11/12 14:36:24 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 7, 172.18.0.2, executor 2, partition 0, PROCESS_LOCAL, 8260 bytes)
+21/11/12 14:36:25 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 172.18.0.2:44369 (size: 141.3 KB, free: 912.2 MB)
+21/11/12 14:36:27 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 172.18.0.2:44369 (size: 26.0 KB, free: 912.1 MB)
+21/11/12 14:36:29 INFO BlockManagerInfo: Added rdd_31_0 in memory on 172.18.0.2:44369 (size: 222.8 KB, free: 911.9 MB)
+21/11/12 14:36:34 INFO BlockManagerInfo: Added rdd_81_0 in memory on 172.18.0.2:44369 (size: 4.6 MB, free: 907.3 MB)
+21/11/12 14:36:34 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 7) in 9832 ms on 172.18.0.2 (executor 2) (1/1)
+21/11/12 14:36:34 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+21/11/12 14:36:34 INFO DAGScheduler: ResultStage 7 (isEmpty at OpBinaryClassificationEvaluator.scala:82) finished in 9.858 s
+21/11/12 14:36:34 INFO DAGScheduler: Job 7 finished: isEmpty at OpBinaryClassificationEvaluator.scala:82, took 9.866896 s
+21/11/12 14:36:34 INFO SparkContext: Starting job: collectAsMap at MulticlassMetrics.scala:48
+21/11/12 14:36:34 INFO DAGScheduler: Registering RDD 94 (map at MulticlassMetrics.scala:45) as input to shuffle 0
+21/11/12 14:36:34 INFO DAGScheduler: Got job 8 (collectAsMap at MulticlassMetrics.scala:48) with 1 output partitions
+21/11/12 14:36:34 INFO DAGScheduler: Final stage: ResultStage 9 (collectAsMap at MulticlassMetrics.scala:48)
+21/11/12 14:36:34 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 8)
+21/11/12 14:36:34 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 8)
+21/11/12 14:36:34 INFO DAGScheduler: Submitting ShuffleMapStage 8 (MapPartitionsRDD[94] at map at MulticlassMetrics.scala:45), which has no missing parents
+21/11/12 14:36:34 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 653.8 KB, free 2002.1 MB)
+21/11/12 14:36:34 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 141.9 KB, free 2002.0 MB)
+21/11/12 14:36:34 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on 547911f14550:39587 (size: 141.9 KB, free: 2004.2 MB)
+21/11/12 14:36:34 INFO SparkContext: Created broadcast 14 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:34 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 8 (MapPartitionsRDD[94] at map at MulticlassMetrics.scala:45) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:34 INFO TaskSchedulerImpl: Adding task set 8.0 with 1 tasks
+21/11/12 14:36:34 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 8, 172.18.0.2, executor 2, partition 0, PROCESS_LOCAL, 8249 bytes)
+21/11/12 14:36:34 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on 172.18.0.2:44369 (size: 141.9 KB, free: 907.2 MB)
+21/11/12 14:36:34 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 8) in 211 ms on 172.18.0.2 (executor 2) (1/1)
+21/11/12 14:36:34 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+21/11/12 14:36:34 INFO DAGScheduler: ShuffleMapStage 8 (map at MulticlassMetrics.scala:45) finished in 0.242 s
+21/11/12 14:36:34 INFO DAGScheduler: looking for newly runnable stages
+21/11/12 14:36:34 INFO DAGScheduler: running: Set()
+21/11/12 14:36:34 INFO DAGScheduler: waiting: Set(ResultStage 9)
+21/11/12 14:36:34 INFO DAGScheduler: failed: Set()
+21/11/12 14:36:34 INFO DAGScheduler: Submitting ResultStage 9 (ShuffledRDD[95] at reduceByKey at MulticlassMetrics.scala:47), which has no missing parents
+21/11/12 14:36:34 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 3.4 KB, free 2002.0 MB)
+21/11/12 14:36:34 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 2.1 KB, free 2002.0 MB)
+21/11/12 14:36:34 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 547911f14550:39587 (size: 2.1 KB, free: 2004.2 MB)
+21/11/12 14:36:34 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:34 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 9 (ShuffledRDD[95] at reduceByKey at MulticlassMetrics.scala:47) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:34 INFO TaskSchedulerImpl: Adding task set 9.0 with 1 tasks
+21/11/12 14:36:34 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 9, 172.18.0.2, executor 2, partition 0, NODE_LOCAL, 7666 bytes)
+21/11/12 14:36:34 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 172.18.0.2:44369 (size: 2.1 KB, free: 907.2 MB)
+21/11/12 14:36:34 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 172.18.0.2:38656
+21/11/12 14:36:34 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 9) in 74 ms on 172.18.0.2 (executor 2) (1/1)
+21/11/12 14:36:34 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+21/11/12 14:36:34 INFO DAGScheduler: ResultStage 9 (collectAsMap at MulticlassMetrics.scala:48) finished in 0.091 s
+21/11/12 14:36:34 INFO DAGScheduler: Job 8 finished: collectAsMap at MulticlassMetrics.scala:48, took 0.367620 s
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 22
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 20
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 24
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 6
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 18
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 8
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 4
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 11
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 13
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 10
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 19
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 3
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 14
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 17
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 5
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 12
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 21
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 2
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 23
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 184
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 235
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 285
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 125
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 232
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 279
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 152
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 224
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 181
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 180
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 295
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 169
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 132
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 111
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 256
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 254
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 192
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 290
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 252
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 186
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned shuffle 0
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 293
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 288
+21/11/12 14:36:34 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 172.18.0.2:44369 in memory (size: 2.1 KB, free: 907.2 MB)
+21/11/12 14:36:34 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 547911f14550:39587 in memory (size: 2.1 KB, free: 2004.2 MB)
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 138
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 291
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 156
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 112
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 270
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 129
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 264
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 255
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 118
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 239
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 189
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 168
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 271
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 161
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 172
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 246
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 269
+21/11/12 14:36:34 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 172.18.0.2:44369 in memory (size: 141.3 KB, free: 907.3 MB)
+21/11/12 14:36:34 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 547911f14550:39587 in memory (size: 141.3 KB, free: 2004.4 MB)
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 249
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 280
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 261
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 193
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 131
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 289
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 183
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 188
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 108
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 124
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 110
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 294
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 191
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 263
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 163
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 236
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 177
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 195
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 237
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 281
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 244
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 171
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 147
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 241
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 115
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 242
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 155
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 240
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 238
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 158
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 113
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 227
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 275
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 166
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 105
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 154
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 250
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 286
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 278
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 133
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 136
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 139
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 190
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 127
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 159
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 162
+21/11/12 14:36:34 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 172.18.0.2:39375 in memory (size: 26.0 KB, free: 912.3 MB)
+21/11/12 14:36:34 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 547911f14550:39587 in memory (size: 26.0 KB, free: 2004.4 MB)
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 231
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 225
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 229
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 230
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 174
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 126
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 137
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 268
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 234
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 276
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 173
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 248
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 251
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 122
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 247
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 149
+21/11/12 14:36:34 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 547911f14550:39587 in memory (size: 11.3 KB, free: 2004.4 MB)
+21/11/12 14:36:34 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 172.18.0.2:35935 in memory (size: 11.3 KB, free: 912.3 MB)
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 116
+21/11/12 14:36:34 INFO BlockManagerInfo: Removed broadcast_11_piece0 on 547911f14550:39587 in memory (size: 10.0 KB, free: 2004.4 MB)
+21/11/12 14:36:34 INFO BlockManagerInfo: Removed broadcast_11_piece0 on 172.18.0.2:33055 in memory (size: 10.0 KB, free: 912.3 MB)
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 245
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 253
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 260
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 228
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 109
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 119
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 130
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 178
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 187
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 233
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 272
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 140
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 194
+21/11/12 14:36:34 INFO CodeGenerator: Code generated in 26.329612 ms
+21/11/12 14:36:34 INFO BlockManagerInfo: Removed broadcast_14_piece0 on 547911f14550:39587 in memory (size: 141.9 KB, free: 2004.5 MB)
+21/11/12 14:36:34 INFO BlockManagerInfo: Removed broadcast_14_piece0 on 172.18.0.2:44369 in memory (size: 141.9 KB, free: 907.5 MB)
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 296
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 292
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 153
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 107
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 257
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 277
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 265
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 274
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 160
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 146
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 123
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 134
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 262
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 167
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 284
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 179
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 282
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 164
+21/11/12 14:36:34 INFO ContextCleaner: Cleaned accumulator 258
+21/11/12 14:36:35 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 547911f14550:39587 in memory (size: 4.6 KB, free: 2004.5 MB)
+21/11/12 14:36:35 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 172.18.0.2:39375 in memory (size: 4.6 KB, free: 912.3 MB)
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 121
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 182
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 170
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 175
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 267
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 243
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 176
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 150
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 223
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 117
+21/11/12 14:36:35 INFO CodeGenerator: Code generated in 34.770884 ms
+21/11/12 14:36:35 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 547911f14550:39587 in memory (size: 26.0 KB, free: 2004.6 MB)
+21/11/12 14:36:35 INFO SparkContext: Starting job: count at OpBinaryClassificationEvaluator.scala:94
+21/11/12 14:36:35 INFO DAGScheduler: Registering RDD 98 (count at OpBinaryClassificationEvaluator.scala:94) as input to shuffle 1
+21/11/12 14:36:35 INFO DAGScheduler: Got job 9 (count at OpBinaryClassificationEvaluator.scala:94) with 1 output partitions
+21/11/12 14:36:35 INFO DAGScheduler: Final stage: ResultStage 11 (count at OpBinaryClassificationEvaluator.scala:94)
+21/11/12 14:36:35 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 10)
+21/11/12 14:36:35 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 10)
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 157
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 287
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 259
+21/11/12 14:36:35 INFO DAGScheduler: Submitting ShuffleMapStage 10 (MapPartitionsRDD[98] at count at OpBinaryClassificationEvaluator.scala:94), which has no missing parents
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 222
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 114
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 106
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 226
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 128
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 151
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 266
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 148
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 185
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 283
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 120
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 135
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 273
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 165
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 7
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 16
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 9
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 15
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 0
+21/11/12 14:36:35 INFO ContextCleaner: Cleaned accumulator 1
+21/11/12 14:36:35 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 651.1 KB, free 2003.6 MB)
+21/11/12 14:36:35 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 140.8 KB, free 2003.5 MB)
+21/11/12 14:36:35 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 547911f14550:39587 (size: 140.8 KB, free: 2004.4 MB)
+21/11/12 14:36:35 INFO SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:35 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 10 (MapPartitionsRDD[98] at count at OpBinaryClassificationEvaluator.scala:94) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:35 INFO TaskSchedulerImpl: Adding task set 10.0 with 1 tasks
+21/11/12 14:36:35 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 10, 172.18.0.2, executor 2, partition 0, PROCESS_LOCAL, 8249 bytes)
+21/11/12 14:36:35 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 172.18.0.2:44369 (size: 140.8 KB, free: 907.3 MB)
+21/11/12 14:36:35 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 10) in 113 ms on 172.18.0.2 (executor 2) (1/1)
+21/11/12 14:36:35 INFO TaskSchedulerImpl: Removed TaskSet 10.0, whose tasks have all completed, from pool 
+21/11/12 14:36:35 INFO DAGScheduler: ShuffleMapStage 10 (count at OpBinaryClassificationEvaluator.scala:94) finished in 0.138 s
+21/11/12 14:36:35 INFO DAGScheduler: looking for newly runnable stages
+21/11/12 14:36:35 INFO DAGScheduler: running: Set()
+21/11/12 14:36:35 INFO DAGScheduler: waiting: Set(ResultStage 11)
+21/11/12 14:36:35 INFO DAGScheduler: failed: Set()
+21/11/12 14:36:35 INFO DAGScheduler: Submitting ResultStage 11 (MapPartitionsRDD[101] at count at OpBinaryClassificationEvaluator.scala:94), which has no missing parents
+21/11/12 14:36:35 INFO MemoryStore: Block broadcast_17 stored as values in memory (estimated size 7.3 KB, free 2003.5 MB)
+21/11/12 14:36:35 INFO MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 3.9 KB, free 2003.5 MB)
+21/11/12 14:36:35 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on 547911f14550:39587 (size: 3.9 KB, free: 2004.4 MB)
+21/11/12 14:36:35 INFO SparkContext: Created broadcast 17 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:35 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 11 (MapPartitionsRDD[101] at count at OpBinaryClassificationEvaluator.scala:94) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:35 INFO TaskSchedulerImpl: Adding task set 11.0 with 1 tasks
+21/11/12 14:36:35 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 11, 172.18.0.2, executor 0, partition 0, NODE_LOCAL, 7771 bytes)
+21/11/12 14:36:35 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on 172.18.0.2:33055 (size: 3.9 KB, free: 912.3 MB)
+21/11/12 14:36:35 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 172.18.0.2:38650
+21/11/12 14:36:35 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 11) in 137 ms on 172.18.0.2 (executor 0) (1/1)
+21/11/12 14:36:35 INFO TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool 
+21/11/12 14:36:35 INFO DAGScheduler: ResultStage 11 (count at OpBinaryClassificationEvaluator.scala:94) finished in 0.145 s
+21/11/12 14:36:35 INFO DAGScheduler: Job 9 finished: count at OpBinaryClassificationEvaluator.scala:94, took 0.287662 s
+21/11/12 14:36:35 INFO CodeGenerator: Code generated in 28.950487 ms
+21/11/12 14:36:35 INFO SparkContext: Starting job: count at BinaryClassificationMetrics.scala:163
+21/11/12 14:36:35 INFO DAGScheduler: Registering RDD 107 (map at OpBinaryClassificationEvaluator.scala:104) as input to shuffle 3
+21/11/12 14:36:35 INFO DAGScheduler: Registering RDD 108 (combineByKey at BinaryClassificationMetrics.scala:151) as input to shuffle 2
+21/11/12 14:36:35 INFO DAGScheduler: Got job 10 (count at BinaryClassificationMetrics.scala:163) with 1 output partitions
+21/11/12 14:36:35 INFO DAGScheduler: Final stage: ResultStage 14 (count at BinaryClassificationMetrics.scala:163)
+21/11/12 14:36:35 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 13)
+21/11/12 14:36:35 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 13)
+21/11/12 14:36:35 INFO DAGScheduler: Submitting ShuffleMapStage 12 (MapPartitionsRDD[107] at map at OpBinaryClassificationEvaluator.scala:104), which has no missing parents
+21/11/12 14:36:35 INFO MemoryStore: Block broadcast_18 stored as values in memory (estimated size 658.5 KB, free 2002.9 MB)
+21/11/12 14:36:35 INFO MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 142.9 KB, free 2002.7 MB)
+21/11/12 14:36:35 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 547911f14550:39587 (size: 142.9 KB, free: 2004.3 MB)
+21/11/12 14:36:35 INFO SparkContext: Created broadcast 18 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:35 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 12 (MapPartitionsRDD[107] at map at OpBinaryClassificationEvaluator.scala:104) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:35 INFO TaskSchedulerImpl: Adding task set 12.0 with 1 tasks
+21/11/12 14:36:35 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 12, 172.18.0.2, executor 2, partition 0, PROCESS_LOCAL, 8249 bytes)
+21/11/12 14:36:35 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 172.18.0.2:44369 (size: 142.9 KB, free: 907.2 MB)
+21/11/12 14:36:35 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 12) in 120 ms on 172.18.0.2 (executor 2) (1/1)
+21/11/12 14:36:35 INFO TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool 
+21/11/12 14:36:35 INFO DAGScheduler: ShuffleMapStage 12 (map at OpBinaryClassificationEvaluator.scala:104) finished in 0.147 s
+21/11/12 14:36:35 INFO DAGScheduler: looking for newly runnable stages
+21/11/12 14:36:35 INFO DAGScheduler: running: Set()
+21/11/12 14:36:35 INFO DAGScheduler: waiting: Set(ShuffleMapStage 13, ResultStage 14)
+21/11/12 14:36:35 INFO DAGScheduler: failed: Set()
+21/11/12 14:36:35 INFO DAGScheduler: Submitting ShuffleMapStage 13 (ShuffledRDD[108] at combineByKey at BinaryClassificationMetrics.scala:151), which has no missing parents
+21/11/12 14:36:35 INFO MemoryStore: Block broadcast_19 stored as values in memory (estimated size 4.0 KB, free 2002.7 MB)
+21/11/12 14:36:35 INFO MemoryStore: Block broadcast_19_piece0 stored as bytes in memory (estimated size 2.2 KB, free 2002.7 MB)
+21/11/12 14:36:35 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 547911f14550:39587 (size: 2.2 KB, free: 2004.3 MB)
+21/11/12 14:36:35 INFO SparkContext: Created broadcast 19 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:35 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 13 (ShuffledRDD[108] at combineByKey at BinaryClassificationMetrics.scala:151) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:35 INFO TaskSchedulerImpl: Adding task set 13.0 with 1 tasks
+21/11/12 14:36:35 INFO TaskSetManager: Starting task 0.0 in stage 13.0 (TID 13, 172.18.0.2, executor 0, partition 0, NODE_LOCAL, 7655 bytes)
+21/11/12 14:36:35 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 172.18.0.2:33055 (size: 2.2 KB, free: 912.3 MB)
+21/11/12 14:36:35 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 172.18.0.2:38650
+21/11/12 14:36:35 INFO TaskSetManager: Finished task 0.0 in stage 13.0 (TID 13) in 115 ms on 172.18.0.2 (executor 0) (1/1)
+21/11/12 14:36:35 INFO TaskSchedulerImpl: Removed TaskSet 13.0, whose tasks have all completed, from pool 
+21/11/12 14:36:35 INFO DAGScheduler: ShuffleMapStage 13 (combineByKey at BinaryClassificationMetrics.scala:151) finished in 0.134 s
+21/11/12 14:36:35 INFO DAGScheduler: looking for newly runnable stages
+21/11/12 14:36:35 INFO DAGScheduler: running: Set()
+21/11/12 14:36:35 INFO DAGScheduler: waiting: Set(ResultStage 14)
+21/11/12 14:36:35 INFO DAGScheduler: failed: Set()
+21/11/12 14:36:35 INFO DAGScheduler: Submitting ResultStage 14 (ShuffledRDD[109] at sortByKey at BinaryClassificationMetrics.scala:155), which has no missing parents
+21/11/12 14:36:35 INFO MemoryStore: Block broadcast_20 stored as values in memory (estimated size 3.7 KB, free 2002.7 MB)
+21/11/12 14:36:35 INFO MemoryStore: Block broadcast_20_piece0 stored as bytes in memory (estimated size 2.2 KB, free 2002.7 MB)
+21/11/12 14:36:35 INFO BlockManagerInfo: Added broadcast_20_piece0 in memory on 547911f14550:39587 (size: 2.2 KB, free: 2004.3 MB)
+21/11/12 14:36:35 INFO SparkContext: Created broadcast 20 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:35 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 14 (ShuffledRDD[109] at sortByKey at BinaryClassificationMetrics.scala:155) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:35 INFO TaskSchedulerImpl: Adding task set 14.0 with 1 tasks
+21/11/12 14:36:35 INFO TaskSetManager: Starting task 0.0 in stage 14.0 (TID 14, 172.18.0.2, executor 3, partition 0, NODE_LOCAL, 7666 bytes)
+21/11/12 14:36:35 INFO BlockManagerInfo: Added broadcast_20_piece0 in memory on 172.18.0.2:35935 (size: 2.2 KB, free: 912.3 MB)
+21/11/12 14:36:35 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 172.18.0.2:38644
+21/11/12 14:36:35 INFO TaskSetManager: Finished task 0.0 in stage 14.0 (TID 14) in 103 ms on 172.18.0.2 (executor 3) (1/1)
+21/11/12 14:36:35 INFO TaskSchedulerImpl: Removed TaskSet 14.0, whose tasks have all completed, from pool 
+21/11/12 14:36:35 INFO DAGScheduler: ResultStage 14 (count at BinaryClassificationMetrics.scala:163) finished in 0.114 s
+21/11/12 14:36:35 INFO DAGScheduler: Job 10 finished: count at BinaryClassificationMetrics.scala:163, took 0.407815 s
+21/11/12 14:36:35 INFO BinaryClassificationMetrics: Curve is too small (1) for 100 bins to be useful
+21/11/12 14:36:35 INFO SparkContext: Starting job: collect at BinaryClassificationMetrics.scala:195
+21/11/12 14:36:35 INFO DAGScheduler: Got job 11 (collect at BinaryClassificationMetrics.scala:195) with 1 output partitions
+21/11/12 14:36:35 INFO DAGScheduler: Final stage: ResultStage 17 (collect at BinaryClassificationMetrics.scala:195)
+21/11/12 14:36:35 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 16)
+21/11/12 14:36:35 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:35 INFO DAGScheduler: Submitting ResultStage 17 (MapPartitionsRDD[111] at mapPartitions at BinaryClassificationMetrics.scala:191), which has no missing parents
+21/11/12 14:36:35 INFO MemoryStore: Block broadcast_21 stored as values in memory (estimated size 4.6 KB, free 2002.7 MB)
+21/11/12 14:36:35 INFO MemoryStore: Block broadcast_21_piece0 stored as bytes in memory (estimated size 2.6 KB, free 2002.7 MB)
+21/11/12 14:36:35 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 547911f14550:39587 (size: 2.6 KB, free: 2004.3 MB)
+21/11/12 14:36:35 INFO SparkContext: Created broadcast 21 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:35 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 17 (MapPartitionsRDD[111] at mapPartitions at BinaryClassificationMetrics.scala:191) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:35 INFO TaskSchedulerImpl: Adding task set 17.0 with 1 tasks
+21/11/12 14:36:35 INFO TaskSetManager: Starting task 0.0 in stage 17.0 (TID 15, 172.18.0.2, executor 2, partition 0, NODE_LOCAL, 7666 bytes)
+21/11/12 14:36:35 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 172.18.0.2:44369 (size: 2.6 KB, free: 907.2 MB)
+21/11/12 14:36:35 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 172.18.0.2:38656
+21/11/12 14:36:35 INFO TaskSetManager: Finished task 0.0 in stage 17.0 (TID 15) in 72 ms on 172.18.0.2 (executor 2) (1/1)
+21/11/12 14:36:35 INFO TaskSchedulerImpl: Removed TaskSet 17.0, whose tasks have all completed, from pool 
+21/11/12 14:36:35 INFO DAGScheduler: ResultStage 17 (collect at BinaryClassificationMetrics.scala:195) finished in 0.081 s
+21/11/12 14:36:35 INFO DAGScheduler: Job 11 finished: collect at BinaryClassificationMetrics.scala:195, took 0.083105 s
+21/11/12 14:36:35 INFO BinaryClassificationMetrics: Total counts: {numPos: 3318, numNeg: 0}
+21/11/12 14:36:35 INFO SparkContext: Starting job: collect at OpBinaryClassificationEvaluator.scala:109
+21/11/12 14:36:35 INFO DAGScheduler: Got job 12 (collect at OpBinaryClassificationEvaluator.scala:109) with 1 output partitions
+21/11/12 14:36:35 INFO DAGScheduler: Final stage: ResultStage 20 (collect at OpBinaryClassificationEvaluator.scala:109)
+21/11/12 14:36:35 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 19)
+21/11/12 14:36:35 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:35 INFO DAGScheduler: Submitting ResultStage 20 (MapPartitionsRDD[114] at map at BinaryClassificationMetrics.scala:75), which has no missing parents
+21/11/12 14:36:35 INFO MemoryStore: Block broadcast_22 stored as values in memory (estimated size 4.9 KB, free 2002.7 MB)
+21/11/12 14:36:35 INFO MemoryStore: Block broadcast_22_piece0 stored as bytes in memory (estimated size 2.7 KB, free 2002.7 MB)
+21/11/12 14:36:35 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 547911f14550:39587 (size: 2.7 KB, free: 2004.3 MB)
+21/11/12 14:36:35 INFO SparkContext: Created broadcast 22 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:35 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 20 (MapPartitionsRDD[114] at map at BinaryClassificationMetrics.scala:75) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:35 INFO TaskSchedulerImpl: Adding task set 20.0 with 1 tasks
+21/11/12 14:36:35 INFO TaskSetManager: Starting task 0.0 in stage 20.0 (TID 16, 172.18.0.2, executor 0, partition 0, NODE_LOCAL, 7666 bytes)
+21/11/12 14:36:35 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 172.18.0.2:33055 (size: 2.7 KB, free: 912.3 MB)
+21/11/12 14:36:35 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 172.18.0.2:38650
+21/11/12 14:36:36 INFO BlockManagerInfo: Added rdd_112_0 in memory on 172.18.0.2:33055 (size: 104.0 B, free: 912.3 MB)
+21/11/12 14:36:36 INFO TaskSetManager: Finished task 0.0 in stage 20.0 (TID 16) in 75 ms on 172.18.0.2 (executor 0) (1/1)
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Removed TaskSet 20.0, whose tasks have all completed, from pool 
+21/11/12 14:36:36 INFO DAGScheduler: ResultStage 20 (collect at OpBinaryClassificationEvaluator.scala:109) finished in 0.082 s
+21/11/12 14:36:36 INFO DAGScheduler: Job 12 finished: collect at OpBinaryClassificationEvaluator.scala:109, took 0.085426 s
+21/11/12 14:36:36 INFO SparkContext: Starting job: collect at OpBinaryClassificationEvaluator.scala:110
+21/11/12 14:36:36 INFO DAGScheduler: Got job 13 (collect at OpBinaryClassificationEvaluator.scala:110) with 1 output partitions
+21/11/12 14:36:36 INFO DAGScheduler: Final stage: ResultStage 23 (collect at OpBinaryClassificationEvaluator.scala:110)
+21/11/12 14:36:36 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 22)
+21/11/12 14:36:36 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:36 INFO DAGScheduler: Submitting ResultStage 23 (MapPartitionsRDD[115] at map at BinaryClassificationMetrics.scala:217), which has no missing parents
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_23 stored as values in memory (estimated size 5.3 KB, free 2002.7 MB)
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_23_piece0 stored as bytes in memory (estimated size 2.9 KB, free 2002.7 MB)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_23_piece0 in memory on 547911f14550:39587 (size: 2.9 KB, free: 2004.3 MB)
+21/11/12 14:36:36 INFO SparkContext: Created broadcast 23 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:36 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 23 (MapPartitionsRDD[115] at map at BinaryClassificationMetrics.scala:217) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Adding task set 23.0 with 1 tasks
+21/11/12 14:36:36 INFO TaskSetManager: Starting task 0.0 in stage 23.0 (TID 17, 172.18.0.2, executor 0, partition 0, PROCESS_LOCAL, 7666 bytes)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_23_piece0 in memory on 172.18.0.2:33055 (size: 2.9 KB, free: 912.3 MB)
+21/11/12 14:36:36 INFO TaskSetManager: Finished task 0.0 in stage 23.0 (TID 17) in 39 ms on 172.18.0.2 (executor 0) (1/1)
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Removed TaskSet 23.0, whose tasks have all completed, from pool 
+21/11/12 14:36:36 INFO DAGScheduler: ResultStage 23 (collect at OpBinaryClassificationEvaluator.scala:110) finished in 0.047 s
+21/11/12 14:36:36 INFO DAGScheduler: Job 13 finished: collect at OpBinaryClassificationEvaluator.scala:110, took 0.049540 s
+21/11/12 14:36:36 INFO SparkContext: Starting job: collect at OpBinaryClassificationEvaluator.scala:111
+21/11/12 14:36:36 INFO DAGScheduler: Got job 14 (collect at OpBinaryClassificationEvaluator.scala:111) with 1 output partitions
+21/11/12 14:36:36 INFO DAGScheduler: Final stage: ResultStage 26 (collect at OpBinaryClassificationEvaluator.scala:111)
+21/11/12 14:36:36 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 25)
+21/11/12 14:36:36 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:36 INFO DAGScheduler: Submitting ResultStage 26 (MapPartitionsRDD[116] at map at BinaryClassificationMetrics.scala:217), which has no missing parents
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_24 stored as values in memory (estimated size 5.3 KB, free 2002.7 MB)
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_24_piece0 stored as bytes in memory (estimated size 2.8 KB, free 2002.7 MB)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 547911f14550:39587 (size: 2.8 KB, free: 2004.3 MB)
+21/11/12 14:36:36 INFO SparkContext: Created broadcast 24 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:36 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 26 (MapPartitionsRDD[116] at map at BinaryClassificationMetrics.scala:217) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Adding task set 26.0 with 1 tasks
+21/11/12 14:36:36 INFO TaskSetManager: Starting task 0.0 in stage 26.0 (TID 18, 172.18.0.2, executor 0, partition 0, PROCESS_LOCAL, 7666 bytes)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 172.18.0.2:33055 (size: 2.8 KB, free: 912.3 MB)
+21/11/12 14:36:36 INFO TaskSetManager: Finished task 0.0 in stage 26.0 (TID 18) in 52 ms on 172.18.0.2 (executor 0) (1/1)
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Removed TaskSet 26.0, whose tasks have all completed, from pool 
+21/11/12 14:36:36 INFO DAGScheduler: ResultStage 26 (collect at OpBinaryClassificationEvaluator.scala:111) finished in 0.060 s
+21/11/12 14:36:36 INFO DAGScheduler: Job 14 finished: collect at OpBinaryClassificationEvaluator.scala:111, took 0.067264 s
+21/11/12 14:36:36 INFO SparkContext: Starting job: collect at OpBinaryClassificationEvaluator.scala:112
+21/11/12 14:36:36 INFO DAGScheduler: Got job 15 (collect at OpBinaryClassificationEvaluator.scala:112) with 3 output partitions
+21/11/12 14:36:36 INFO DAGScheduler: Final stage: ResultStage 29 (collect at OpBinaryClassificationEvaluator.scala:112)
+21/11/12 14:36:36 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 28)
+21/11/12 14:36:36 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:36 INFO DAGScheduler: Submitting ResultStage 29 (UnionRDD[120] at UnionRDD at BinaryClassificationMetrics.scala:90), which has no missing parents
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_25 stored as values in memory (estimated size 6.2 KB, free 2002.7 MB)
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_25_piece0 stored as bytes in memory (estimated size 3.3 KB, free 2002.7 MB)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 547911f14550:39587 (size: 3.3 KB, free: 2004.3 MB)
+21/11/12 14:36:36 INFO SparkContext: Created broadcast 25 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:36 INFO DAGScheduler: Submitting 3 missing tasks from ResultStage 29 (UnionRDD[120] at UnionRDD at BinaryClassificationMetrics.scala:90) (first 15 tasks are for partitions Vector(0, 1, 2))
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Adding task set 29.0 with 3 tasks
+21/11/12 14:36:36 INFO TaskSetManager: Starting task 1.0 in stage 29.0 (TID 19, 172.18.0.2, executor 0, partition 1, PROCESS_LOCAL, 7775 bytes)
+21/11/12 14:36:36 INFO TaskSetManager: Starting task 0.0 in stage 29.0 (TID 20, 172.18.0.2, executor 2, partition 0, PROCESS_LOCAL, 7853 bytes)
+21/11/12 14:36:36 INFO TaskSetManager: Starting task 2.0 in stage 29.0 (TID 21, 172.18.0.2, executor 1, partition 2, PROCESS_LOCAL, 7853 bytes)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 172.18.0.2:44369 (size: 3.3 KB, free: 907.2 MB)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 172.18.0.2:33055 (size: 3.3 KB, free: 912.3 MB)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 172.18.0.2:39375 (size: 3.3 KB, free: 912.3 MB)
+21/11/12 14:36:36 INFO TaskSetManager: Finished task 0.0 in stage 29.0 (TID 20) in 99 ms on 172.18.0.2 (executor 2) (1/3)
+21/11/12 14:36:36 INFO TaskSetManager: Finished task 1.0 in stage 29.0 (TID 19) in 115 ms on 172.18.0.2 (executor 0) (2/3)
+21/11/12 14:36:36 INFO TaskSetManager: Finished task 2.0 in stage 29.0 (TID 21) in 142 ms on 172.18.0.2 (executor 1) (3/3)
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Removed TaskSet 29.0, whose tasks have all completed, from pool 
+21/11/12 14:36:36 INFO DAGScheduler: ResultStage 29 (collect at OpBinaryClassificationEvaluator.scala:112) finished in 0.158 s
+21/11/12 14:36:36 INFO DAGScheduler: Job 15 finished: collect at OpBinaryClassificationEvaluator.scala:112, took 0.162168 s
+21/11/12 14:36:36 INFO SparkContext: Starting job: collect at SlidingRDD.scala:81
+21/11/12 14:36:36 INFO DAGScheduler: Got job 16 (collect at SlidingRDD.scala:81) with 3 output partitions
+21/11/12 14:36:36 INFO DAGScheduler: Final stage: ResultStage 32 (collect at SlidingRDD.scala:81)
+21/11/12 14:36:36 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 31)
+21/11/12 14:36:36 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:36 INFO DAGScheduler: Submitting ResultStage 32 (MapPartitionsRDD[126] at mapPartitions at SlidingRDD.scala:78), which has no missing parents
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_26 stored as values in memory (estimated size 6.7 KB, free 2002.7 MB)
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_26_piece0 stored as bytes in memory (estimated size 3.5 KB, free 2002.7 MB)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_26_piece0 in memory on 547911f14550:39587 (size: 3.5 KB, free: 2004.3 MB)
+21/11/12 14:36:36 INFO SparkContext: Created broadcast 26 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:36 INFO DAGScheduler: Submitting 3 missing tasks from ResultStage 32 (MapPartitionsRDD[126] at mapPartitions at SlidingRDD.scala:78) (first 15 tasks are for partitions Vector(0, 1, 2))
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Adding task set 32.0 with 3 tasks
+21/11/12 14:36:36 INFO TaskSetManager: Starting task 1.0 in stage 32.0 (TID 22, 172.18.0.2, executor 0, partition 1, PROCESS_LOCAL, 7775 bytes)
+21/11/12 14:36:36 INFO TaskSetManager: Starting task 0.0 in stage 32.0 (TID 23, 172.18.0.2, executor 2, partition 0, PROCESS_LOCAL, 7853 bytes)
+21/11/12 14:36:36 INFO TaskSetManager: Starting task 2.0 in stage 32.0 (TID 24, 172.18.0.2, executor 1, partition 2, PROCESS_LOCAL, 7853 bytes)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_26_piece0 in memory on 172.18.0.2:33055 (size: 3.5 KB, free: 912.3 MB)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_26_piece0 in memory on 172.18.0.2:44369 (size: 3.5 KB, free: 907.2 MB)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_26_piece0 in memory on 172.18.0.2:39375 (size: 3.5 KB, free: 912.3 MB)
+21/11/12 14:36:36 INFO TaskSetManager: Finished task 1.0 in stage 32.0 (TID 22) in 53 ms on 172.18.0.2 (executor 0) (1/3)
+21/11/12 14:36:36 INFO TaskSetManager: Finished task 0.0 in stage 32.0 (TID 23) in 73 ms on 172.18.0.2 (executor 2) (2/3)
+21/11/12 14:36:36 INFO TaskSetManager: Finished task 2.0 in stage 32.0 (TID 24) in 95 ms on 172.18.0.2 (executor 1) (3/3)
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Removed TaskSet 32.0, whose tasks have all completed, from pool 
+21/11/12 14:36:36 INFO DAGScheduler: ResultStage 32 (collect at SlidingRDD.scala:81) finished in 0.105 s
+21/11/12 14:36:36 INFO DAGScheduler: Job 16 finished: collect at SlidingRDD.scala:81, took 0.108048 s
+21/11/12 14:36:36 INFO SparkContext: Starting job: aggregate at AreaUnderCurve.scala:45
+21/11/12 14:36:36 INFO DAGScheduler: Got job 17 (aggregate at AreaUnderCurve.scala:45) with 2 output partitions
+21/11/12 14:36:36 INFO DAGScheduler: Final stage: ResultStage 35 (aggregate at AreaUnderCurve.scala:45)
+21/11/12 14:36:36 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 34)
+21/11/12 14:36:36 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:36 INFO DAGScheduler: Submitting ResultStage 35 (SlidingRDD[125] at RDD at SlidingRDD.scala:50), which has no missing parents
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_27 stored as values in memory (estimated size 6.8 KB, free 2002.6 MB)
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_27_piece0 stored as bytes in memory (estimated size 3.6 KB, free 2002.6 MB)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_27_piece0 in memory on 547911f14550:39587 (size: 3.6 KB, free: 2004.3 MB)
+21/11/12 14:36:36 INFO SparkContext: Created broadcast 27 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:36 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 35 (SlidingRDD[125] at RDD at SlidingRDD.scala:50) (first 15 tasks are for partitions Vector(0, 1))
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Adding task set 35.0 with 2 tasks
+21/11/12 14:36:36 INFO TaskSetManager: Starting task 1.0 in stage 35.0 (TID 25, 172.18.0.2, executor 0, partition 1, PROCESS_LOCAL, 8314 bytes)
+21/11/12 14:36:36 INFO TaskSetManager: Starting task 0.0 in stage 35.0 (TID 26, 172.18.0.2, executor 1, partition 0, PROCESS_LOCAL, 8372 bytes)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_27_piece0 in memory on 172.18.0.2:33055 (size: 3.6 KB, free: 912.3 MB)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_27_piece0 in memory on 172.18.0.2:39375 (size: 3.6 KB, free: 912.3 MB)
+21/11/12 14:36:36 INFO TaskSetManager: Finished task 0.0 in stage 35.0 (TID 26) in 53 ms on 172.18.0.2 (executor 1) (1/2)
+21/11/12 14:36:36 INFO TaskSetManager: Finished task 1.0 in stage 35.0 (TID 25) in 67 ms on 172.18.0.2 (executor 0) (2/2)
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Removed TaskSet 35.0, whose tasks have all completed, from pool 
+21/11/12 14:36:36 INFO DAGScheduler: ResultStage 35 (aggregate at AreaUnderCurve.scala:45) finished in 0.080 s
+21/11/12 14:36:36 INFO DAGScheduler: Job 17 finished: aggregate at AreaUnderCurve.scala:45, took 0.084166 s
+21/11/12 14:36:36 INFO SparkContext: Starting job: first at BinaryClassificationMetrics.scala:109
+21/11/12 14:36:36 INFO DAGScheduler: Got job 18 (first at BinaryClassificationMetrics.scala:109) with 1 output partitions
+21/11/12 14:36:36 INFO DAGScheduler: Final stage: ResultStage 38 (first at BinaryClassificationMetrics.scala:109)
+21/11/12 14:36:36 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 37)
+21/11/12 14:36:36 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:36 INFO DAGScheduler: Submitting ResultStage 38 (MapPartitionsRDD[127] at map at BinaryClassificationMetrics.scala:226), which has no missing parents
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_28 stored as values in memory (estimated size 5.4 KB, free 2002.6 MB)
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_28_piece0 stored as bytes in memory (estimated size 2.9 KB, free 2002.6 MB)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_28_piece0 in memory on 547911f14550:39587 (size: 2.9 KB, free: 2004.3 MB)
+21/11/12 14:36:36 INFO SparkContext: Created broadcast 28 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:36 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 38 (MapPartitionsRDD[127] at map at BinaryClassificationMetrics.scala:226) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Adding task set 38.0 with 1 tasks
+21/11/12 14:36:36 INFO TaskSetManager: Starting task 0.0 in stage 38.0 (TID 27, 172.18.0.2, executor 0, partition 0, PROCESS_LOCAL, 7666 bytes)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_28_piece0 in memory on 172.18.0.2:33055 (size: 2.9 KB, free: 912.2 MB)
+21/11/12 14:36:36 INFO TaskSetManager: Finished task 0.0 in stage 38.0 (TID 27) in 50 ms on 172.18.0.2 (executor 0) (1/1)
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Removed TaskSet 38.0, whose tasks have all completed, from pool 
+21/11/12 14:36:36 INFO DAGScheduler: ResultStage 38 (first at BinaryClassificationMetrics.scala:109) finished in 0.057 s
+21/11/12 14:36:36 INFO DAGScheduler: Job 18 finished: first at BinaryClassificationMetrics.scala:109, took 0.062561 s
+21/11/12 14:36:36 INFO SparkContext: Starting job: collect at SlidingRDD.scala:81
+21/11/12 14:36:36 INFO DAGScheduler: Got job 19 (collect at SlidingRDD.scala:81) with 2 output partitions
+21/11/12 14:36:36 INFO DAGScheduler: Final stage: ResultStage 41 (collect at SlidingRDD.scala:81)
+21/11/12 14:36:36 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 40)
+21/11/12 14:36:36 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:36 INFO DAGScheduler: Submitting ResultStage 41 (MapPartitionsRDD[131] at mapPartitions at SlidingRDD.scala:78), which has no missing parents
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_29 stored as values in memory (estimated size 6.6 KB, free 2002.6 MB)
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_29_piece0 stored as bytes in memory (estimated size 3.5 KB, free 2002.6 MB)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_29_piece0 in memory on 547911f14550:39587 (size: 3.5 KB, free: 2004.3 MB)
+21/11/12 14:36:36 INFO SparkContext: Created broadcast 29 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:36 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 41 (MapPartitionsRDD[131] at mapPartitions at SlidingRDD.scala:78) (first 15 tasks are for partitions Vector(0, 1))
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Adding task set 41.0 with 2 tasks
+21/11/12 14:36:36 INFO TaskSetManager: Starting task 1.0 in stage 41.0 (TID 28, 172.18.0.2, executor 0, partition 1, PROCESS_LOCAL, 7775 bytes)
+21/11/12 14:36:36 INFO TaskSetManager: Starting task 0.0 in stage 41.0 (TID 29, 172.18.0.2, executor 1, partition 0, PROCESS_LOCAL, 7853 bytes)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_29_piece0 in memory on 172.18.0.2:33055 (size: 3.5 KB, free: 912.2 MB)
+21/11/12 14:36:36 INFO TaskSetManager: Finished task 1.0 in stage 41.0 (TID 28) in 30 ms on 172.18.0.2 (executor 0) (1/2)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_29_piece0 in memory on 172.18.0.2:39375 (size: 3.5 KB, free: 912.3 MB)
+21/11/12 14:36:36 INFO TaskSetManager: Finished task 0.0 in stage 41.0 (TID 29) in 51 ms on 172.18.0.2 (executor 1) (2/2)
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Removed TaskSet 41.0, whose tasks have all completed, from pool 
+21/11/12 14:36:36 INFO DAGScheduler: ResultStage 41 (collect at SlidingRDD.scala:81) finished in 0.058 s
+21/11/12 14:36:36 INFO DAGScheduler: Job 19 finished: collect at SlidingRDD.scala:81, took 0.061405 s
+21/11/12 14:36:36 INFO SparkContext: Starting job: aggregate at AreaUnderCurve.scala:45
+21/11/12 14:36:36 INFO DAGScheduler: Got job 20 (aggregate at AreaUnderCurve.scala:45) with 1 output partitions
+21/11/12 14:36:36 INFO DAGScheduler: Final stage: ResultStage 44 (aggregate at AreaUnderCurve.scala:45)
+21/11/12 14:36:36 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 43)
+21/11/12 14:36:36 INFO DAGScheduler: Missing parents: List()
+21/11/12 14:36:36 INFO DAGScheduler: Submitting ResultStage 44 (SlidingRDD[130] at RDD at SlidingRDD.scala:50), which has no missing parents
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_30 stored as values in memory (estimated size 6.7 KB, free 2002.6 MB)
+21/11/12 14:36:36 INFO MemoryStore: Block broadcast_30_piece0 stored as bytes in memory (estimated size 3.5 KB, free 2002.6 MB)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_30_piece0 in memory on 547911f14550:39587 (size: 3.5 KB, free: 2004.3 MB)
+21/11/12 14:36:36 INFO SparkContext: Created broadcast 30 from broadcast at DAGScheduler.scala:1163
+21/11/12 14:36:36 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 44 (SlidingRDD[130] at RDD at SlidingRDD.scala:50) (first 15 tasks are for partitions Vector(0))
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Adding task set 44.0 with 1 tasks
+21/11/12 14:36:36 INFO TaskSetManager: Starting task 0.0 in stage 44.0 (TID 30, 172.18.0.2, executor 3, partition 0, PROCESS_LOCAL, 8372 bytes)
+21/11/12 14:36:36 INFO BlockManagerInfo: Added broadcast_30_piece0 in memory on 172.18.0.2:35935 (size: 3.5 KB, free: 912.3 MB)
+21/11/12 14:36:36 INFO TaskSetManager: Finished task 0.0 in stage 44.0 (TID 30) in 51 ms on 172.18.0.2 (executor 3) (1/1)
+21/11/12 14:36:36 INFO TaskSchedulerImpl: Removed TaskSet 44.0, whose tasks have all completed, from pool 
+21/11/12 14:36:36 INFO DAGScheduler: ResultStage 44 (aggregate at AreaUnderCurve.scala:45) finished in 0.060 s
+21/11/12 14:36:36 INFO DAGScheduler: Job 20 finished: aggregate at AreaUnderCurve.scala:45, took 0.065910 s
+21/11/12 14:36:36 INFO Evaluators$BinaryClassification$$anon$1: Evaluated metrics: {
+  "Precision" : 1.0,
+  "Recall" : 1.0,
+  "F1" : 1.0,
+  "AuROC" : 1.0,
+  "AuPR" : 1.0,
+  "Error" : 0.0,
+  "TP" : 3318.0,
+  "TN" : 0.0,
+  "FP" : 0.0,
+  "FN" : 0.0,
+  "thresholds" : [ 1.0 ],
+  "precisionByThreshold" : [ 1.0 ],
+  "recallByThreshold" : [ 1.0 ],
+  "falsePositiveRateByThreshold" : [ 0.0 ]
+}
+21/11/12 14:36:36 INFO MapPartitionsRDD: Removing RDD 31 from persistence list
+21/11/12 14:36:36 INFO BlockManager: Removing RDD 31
+Metrics:
+{
+  "Precision" : 1.0,
+  "Recall" : 1.0,
+  "F1" : 1.0,
+  "AuROC" : 1.0,
+  "AuPR" : 1.0,
+  "Error" : 0.0,
+  "TP" : 3318.0,
+  "TN" : 0.0,
+  "FP" : 0.0,
+  "FN" : 0.0,
+  "thresholds" : [ 1.0 ],
+  "precisionByThreshold" : [ 1.0 ],
+  "recallByThreshold" : [ 1.0 ],
+  "falsePositiveRateByThreshold" : [ 0.0 ]
+}
+21/11/12 14:36:36 INFO SparkContext: Invoking stop() from shutdown hook
+21/11/12 14:36:36 INFO SparkUI: Stopped Spark web UI at http://547911f14550:4040
+21/11/12 14:36:36 INFO StandaloneSchedulerBackend: Shutting down all executors
+21/11/12 14:36:36 INFO CoarseGrainedSchedulerBackend$DriverEndpoint: Asking each executor to shut down
+21/11/12 14:36:36 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/11/12 14:36:36 INFO MemoryStore: MemoryStore cleared
+21/11/12 14:36:36 INFO BlockManager: BlockManager stopped
+21/11/12 14:36:36 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/11/12 14:36:36 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/11/12 14:36:37 INFO SparkContext: Successfully stopped SparkContext
+21/11/12 14:36:37 INFO ShutdownHookManager: Shutdown hook called
+21/11/12 14:36:37 INFO ShutdownHookManager: Deleting directory /tmp/spark-c3333c20-3a15-4bdf-9701-0550cc3d9028
+21/11/12 14:36:37 INFO ShutdownHookManager: Deleting directory /tmp/spark-1dcb13eb-f0e4-4ff0-96ab-cd98d74e645d
