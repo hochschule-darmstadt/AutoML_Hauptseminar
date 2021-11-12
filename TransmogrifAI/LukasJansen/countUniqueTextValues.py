@@ -17,5 +17,5 @@ filepath = args.inputfile
 
 
 df = pd.read_csv(filepath)
-df = df[[col for col, dtype in df.dtypes.items() if str(dtype) == "object"]]
+#df = df[[col for col, dtype in df.dtypes.items() if str(dtype) == "object"]]
 print(df.agg(lambda col: pd.Series({'nans': col.isna().sum(), 'unqiues':len(col.unique())}), axis=0).to_csv(sep="\t"))

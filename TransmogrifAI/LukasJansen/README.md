@@ -1,20 +1,20 @@
 # TransmogrifAI
 
 
-There we two older attempts. One just starting from Scratch (Without the gradle plugin, Dependency distribution in the cluster is a mess, even with the plugin mechanism from spark) and the other using the project boostrap from the documentation (which is currently generating unusable code, see https://github.com/salesforce/TransmogrifAI/issues/408#issuecomment-540758245). The solution was to combine the two and start from scratch in a generated project.
+There we two older attempts. One just starting from Scratch (Without the gradle plugin, Dependency distribution in the cluster is a mess, even with the plugin mechanism from spark) and the other using the project boostrap from the documentation (which is currently generating unusable code, see https://github.com/salesforce/TransmogrifAI/issues/408#issuecomment-540758245). The solution was to combine the two and start from scratch in a generated project and manually create classes for each Feature.
 
-I recommend IntelliJ for the project directory.
+I recommend IntelliJ for the project directory (Avro generated Classes are not visible).
 ## Running
 
 ```sh
-docker-compose up -d --build spark worker submit
-# This IP can be used to look at the UIs
+# This IP can be used to look at the UIs port 8080
+docker-compose up -d --build
 docker inspect lukasjansen_spark_1 | grep IPAddress
-sleep 60
-# Always 2 starts required, don't know why
-docker-compose up -d submit
 docker-compose exec spark tail -f /resdir/run.log
-docker-compose exec spark cat /resdir/run.log
+# Ctrl-c when finished
+docker cp lukasjansen_spark_1:/resdir/ resdir
+rm resdir/phishing_model_* resdir/college_model_*
+
 ```
 
 ## Project Creation:
@@ -52,6 +52,7 @@ mv tmp.csv ../phishing_test_headerfix.csv
 addid ../phishing_train_headerfix.csv tmp.csv
 mv tmp.csv ../phishing_train_headerfix.csv
 python3 ../genavroschema.py -n Phishing -p de.lukas_jansen.hda.seminar -r Result ../phishing_train_headerfix.csv > ../phishing.avsc
+python3 ../countUniqueTextValues.py ../phishing_train_headerfix.csv
 java -cp cli/build/libs/transmogrifai-0.7.0-all.jar com.salesforce.op.cli.CLI gen --input "../phishing_train_headerfix.csv" --response Result --schema ../phishing.avsc --id ID PhishingClassification
 mv phishingclassification ../ 
 ```
@@ -114,35 +115,4 @@ Cannot infer the kind of problem based on response field 'Result'. What kind of 
 
 The generated project was edited, to allow for a seperate evaluator file. This reader was added for this purpose and the  
 
-```scala
-
-class SampleReader(val isTrain: Boolean) extends ReaderWithHeaders
-
-  class ManualReader(envvar: String)
-      extends CSVAutoReader[College](
-        readPath = Some(sys.env(envvar)),
-        headers = Seq.empty,
-        recordNamespace = schema.getNamespace,
-        recordName = schema.getName,
-        key = _.getUNITID.toString
-      ){
-    override def read(params: OpParams)(implicit spark: SparkSession): Data = super.read(params)
-  }
-
-/*
-...
-*/
-
-  def runner(opParams: OpParams): OpWorkflowRunner =
-    new OpWorkflowRunner(
-      workflow = workflow,
-      trainingReader = new SampleReader(isTrain = true),
-      scoringReader = new SampleReader(isTrain = false),
-      evaluationReader = Option(new ManualReader("EVALFILE")),
-      evaluator = Option(evaluator),
-      scoringEvaluator = Option(evaluator)
-    )
-
-```
-
-Now the two projects were combined.
+Now the two projects were combined and the Feature Extractors converted from annon. classes to "real" classes for each feature (this took forever).

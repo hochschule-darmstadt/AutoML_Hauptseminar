@@ -1,11 +1,13 @@
 package de.lukas_jansen.automl
 
 import de.lukas_jansen.automl.schema.College
+import de.lukas_jansen.automl.schema.Phishing
 import com.salesforce.op.features.{FeatureBuilder => FB}
 import com.salesforce.op.features.types.{City => _, State => _, _}
 import de.lukas_jansen.automl.CollegeFeatures._
+import de.lukas_jansen.automl.PhishingFeatures._
 
-trait CollegeFeatures extends Serializable {
+trait Features extends Serializable {
 
   val percent_pell_grant = FB
     .Real[College]
@@ -230,6 +232,161 @@ trait CollegeFeatures extends Serializable {
     .extract(new MedianEarnings10Years)
     .asPredictor
 
+  val result = FB
+    .PickList[Phishing]
+    .extract(new Result)
+    .asResponse
+
+  val having_ip_address = FB
+    .PickList[Phishing]
+    .extract(new HavingIPAddress)
+    .asPredictor
+
+  val url_length = FB
+    .PickList[Phishing]
+    .extract(new URLLength)
+    .asPredictor
+
+  val shortining_service = FB
+    .PickList[Phishing]
+    .extract(new ShortiningService)
+    .asPredictor
+
+  val having_at_symbol = FB
+    .PickList[Phishing]
+    .extract(new HavingAtSymbol)
+    .asPredictor
+
+  val double_slash_redirecting = FB
+    .PickList[Phishing]
+    .extract(new DoubleSlashRedirecting)
+    .asPredictor
+
+  val prefix_suffix = FB
+    .PickList[Phishing]
+    .extract(new PrefixSuffix)
+    .asPredictor
+
+  val having_sub_domain = FB
+    .PickList[Phishing]
+    .extract(new HavingSubDomain)
+    .asPredictor
+
+  val sslfinal_state = FB
+    .PickList[Phishing]
+    .extract(new SSLfinalState)
+    .asPredictor
+
+  val domain_registeration_length = FB
+    .PickList[Phishing]
+    .extract(new DomainRegisterationLength)
+    .asPredictor
+
+  val favicon = FB
+    .PickList[Phishing]
+    .extract(new Favicon)
+    .asPredictor
+
+  val port = FB
+    .PickList[Phishing]
+    .extract(new Port)
+    .asPredictor
+
+  val https_token = FB
+    .PickList[Phishing]
+    .extract(new HTTPSToken)
+    .asPredictor
+
+  val request_url = FB
+    .PickList[Phishing]
+    .extract(new RequestURL)
+    .asPredictor
+
+  val url_of_anchor = FB
+    .PickList[Phishing]
+    .extract(new URLOfAnchor)
+    .asPredictor
+
+  val links_in_tags = FB
+    .PickList[Phishing]
+    .extract(new LinksInTags)
+    .asPredictor
+
+  val sfh = FB
+    .PickList[Phishing]
+    .extract(new SFH)
+    .asPredictor
+
+  val submitting_to_email = FB
+    .PickList[Phishing]
+    .extract(new SubmittingToEmail)
+    .asPredictor
+
+  val abnormal_url = FB
+    .PickList[Phishing]
+    .extract(new AbnormalURL)
+    .asPredictor
+
+  val redirect = FB
+    .PickList[Phishing]
+    .extract(new Redirect)
+    .asPredictor
+
+  val on_mouseover = FB
+    .PickList[Phishing]
+    .extract(new OnMouseover)
+    .asPredictor
+
+  val rightclick = FB
+    .PickList[Phishing]
+    .extract(new RightClick)
+    .asPredictor
+
+  val popupwidnow = FB
+    .PickList[Phishing]
+    .extract(new PopUpWidnow)
+    .asPredictor
+
+  val iframe = FB
+    .PickList[Phishing]
+    .extract(new Iframe)
+    .asPredictor
+
+  val age_of_domain = FB
+    .PickList[Phishing]
+    .extract(new AgeOfDomain)
+    .asPredictor
+
+  val dnsrecord = FB
+    .PickList[Phishing]
+    .extract(new DNSRecord)
+    .asPredictor
+
+  val web_traffic = FB
+    .PickList[Phishing]
+    .extract(new WebTraffic)
+    .asPredictor
+
+  val page_rank = FB
+    .PickList[Phishing]
+    .extract(new PageRank)
+    .asPredictor
+
+  val google_index = FB
+    .PickList[Phishing]
+    .extract(new GoogleIndex)
+    .asPredictor
+
+  val links_pointing_to_page = FB
+    .PickList[Phishing]
+    .extract(new LinksPointingToPage)
+    .asPredictor
+
+  val statistical_report = FB
+    .PickList[Phishing]
+    .extract(new StatisticalReport)
+    .asPredictor
+
 }
 
 object CollegeFeatures {
@@ -296,4 +453,58 @@ object CollegeFeatures {
   class MedianEarnings6Years extends RealExtract(p => Option(Double.unbox(p.getMedianEarnings6Years)), _.toReal)
   class MeanEarnings10Years extends RealExtract(p => Option(Double.unbox(p.getMeanEarnings10Years)), _.toReal)
   class MedianEarnings10Years extends RealExtract(p => Option(Double.unbox(p.getMedianEarnings10Years)), _.toReal)
+
+}
+
+object PhishingFeatures {
+  abstract class PhishingFeatureFunc[T] extends Function[Phishing, T] with Serializable
+
+  class RealExtract[T <: Real](f: Phishing => Option[Double], f1: Option[Double] => T) extends PhishingFeatureFunc[T] {
+    override def apply(v1: Phishing): T = f1(f(v1))
+  }
+
+  class PickListExtract(f: Phishing => Option[_]) extends PhishingFeatureFunc[PickList] {
+    override def apply(v1: Phishing): PickList = f(v1).map(_.toString).toPickList
+  }
+
+  class IntExtract[T <: Integral](f: Phishing => Option[Int], f1: Option[Int] => T) extends PhishingFeatureFunc[T] {
+    override def apply(v1: Phishing): T = f1(f(v1))
+  }
+
+  class TextExtract(f: Phishing => String) extends PhishingFeatureFunc[Text] {
+    override def apply(v1: Phishing): Text = Option(f(v1)).toText
+  }
+
+  class Result extends PickListExtract(p => Option(p.getResult))
+  class HavingIPAddress extends PickListExtract(p => Option(p.getHavingIPAddress))
+  class URLLength extends PickListExtract(p => Option(p.getURLLength))
+  class ShortiningService extends PickListExtract(p => Option(p.getShortiningService))
+  class HavingAtSymbol extends PickListExtract(p => Option(p.getHavingAtSymbol))
+  class DoubleSlashRedirecting extends PickListExtract(p => Option(p.getDoubleSlashRedirecting))
+  class PrefixSuffix extends PickListExtract(p => Option(p.getPrefixSuffix))
+  class HavingSubDomain extends PickListExtract(p => Option(p.getHavingSubDomain))
+  class SSLfinalState extends PickListExtract(p => Option(p.getSSLfinalState))
+  class DomainRegisterationLength extends PickListExtract(p => Option(p.getDomainRegisterationLength))
+  class Favicon extends PickListExtract(p => Option(p.getFavicon))
+  class Port extends PickListExtract(p => Option(p.getPort))
+  class HTTPSToken extends PickListExtract(p => Option(p.getHTTPSToken))
+  class RequestURL extends PickListExtract(p => Option(p.getRequestURL))
+  class URLOfAnchor extends PickListExtract(p => Option(p.getURLOfAnchor))
+  class LinksInTags extends PickListExtract(p => Option(p.getLinksInTags))
+  class SFH extends PickListExtract(p => Option(p.getSFH))
+  class SubmittingToEmail extends PickListExtract(p => Option(p.getSubmittingToEmail))
+  class AbnormalURL extends PickListExtract(p => Option(p.getAbnormalURL))
+  class Redirect extends PickListExtract(p => Option(p.getRedirect))
+  class OnMouseover extends PickListExtract(p => Option(p.getOnMouseover))
+  class RightClick extends PickListExtract(p => Option(p.getRightClick))
+  class PopUpWidnow extends PickListExtract(p => Option(p.getPopUpWidnow))
+  class Iframe extends PickListExtract(p => Option(p.getIframe))
+  class AgeOfDomain extends PickListExtract(p => Option(p.getAgeOfDomain))
+  class DNSRecord extends PickListExtract(p => Option(p.getDNSRecord))
+  class WebTraffic extends PickListExtract(p => Option(p.getWebTraffic))
+  class PageRank extends PickListExtract(p => Option(p.getPageRank))
+  class GoogleIndex extends PickListExtract(p => Option(p.getGoogleIndex))
+  class LinksPointingToPage extends PickListExtract(p => Option(p.getLinksPointingToPage))
+  class StatisticalReport extends PickListExtract(p => Option(p.getStatisticalReport))
+
 }
