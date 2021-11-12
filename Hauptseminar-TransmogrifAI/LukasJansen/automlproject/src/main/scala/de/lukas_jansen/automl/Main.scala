@@ -89,7 +89,8 @@ object Main extends Features{
       .getOutput()
     val prediction = RegressionModelSelector
       .withCrossValidation(numFolds=5,
-        maxWait = Duration(10L, "minutes"),
+      //broken, just crashes after this time :(
+        maxWait = Duration(10L, "hours"),
         modelTypesToUse = Seq(RMTT.OpLinearRegression, RMTT.OpRandomForestRegressor, RMTT.OpGBTRegressor, RMTT.OpDecisionTreeRegressor))
       .setInput(response, checkedFeatures).getOutput()
     /* https://github.com/salesforce/TransmogrifAI/blob/44a5dce4b90015a71028ed28002018f5db0b0bb2/docs/developer-guide/index.md#fitted-workflows */
@@ -152,7 +153,7 @@ object Main extends Features{
 
     val prediction = BinaryClassificationModelSelector
       .withCrossValidation(numFolds=5,
-        maxWait = Duration(10L, "minutes"),
+        maxWait = Duration(10L, "hours"),
         modelTypesToUse = Seq(BMTT.OpLogisticRegression, BMTT.OpRandomForestClassifier, BMTT.OpGBTClassifier, BMTT.OpDecisionTreeClassifier, BMTT.OpLinearSVC, BMTT.OpNaiveBayes))
       .setInput(response, checkedFeatures).getOutput()
     /* https://github.com/salesforce/TransmogrifAI/blob/44a5dce4b90015a71028ed28002018f5db0b0bb2/docs/developer-guide/index.md#fitted-workflows */

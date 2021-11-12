@@ -9,15 +9,16 @@ I recommend IntelliJ for the project directory (Avro generated Classes are not v
 ```sh
 # AMI: sudo yum install docker git
 #  sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+# sudo service docker start
 #  sudo chmod +x /usr/local/bin/docker-compose
 # git clone https://github.com/hochschule-darmstadt/AutoML_Hauptseminar.git
 
 # This IP can be used to look at the UIs port 8080
-docker-compose up -d --build
-docker inspect lukasjansen_spark_1 | grep IPAddress
-docker-compose exec spark tail -f /resdir/run.log
+sudo docker-compose up -d --build
+sudo docker inspect lukasjansen_spark_1 | grep IPAddress
+sudo docker-compose exec spark tail -f /resdir/run.log
 # Ctrl-c when finished
-docker cp lukasjansen_spark_1:/resdir/ resdir
+sudo docker cp lukasjansen_spark_1:/resdir/ resdir
 rm resdir/phishing_model_* resdir/college_model_*
 
 ```
