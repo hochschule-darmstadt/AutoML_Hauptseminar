@@ -475,7 +475,7 @@ object PhishingFeatures {
     override def apply(v1: Phishing): Text = Option(f(v1)).toText
   }
 
-  class Result extends PickListExtract(p => Option(p.getResult))
+  class Result extends PickListExtract(p => Option(p.getResult>0))
   class HavingIPAddress extends PickListExtract(p => Option(p.getHavingIPAddress))
   class URLLength extends PickListExtract(p => Option(p.getURLLength))
   class ShortiningService extends PickListExtract(p => Option(p.getShortiningService))
