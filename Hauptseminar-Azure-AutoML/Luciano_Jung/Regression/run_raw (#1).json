@@ -1,0 +1,145 @@
+{
+    "runId": "AutoML_79c242ff-bb49-48c1-ae1d-d3fe66b35578",
+    "runUuid": "421e6502-33ff-4d33-97a4-6b09e83d21b5",
+    "parentRunUuid": null,
+    "rootRunUuid": "421e6502-33ff-4d33-97a4-6b09e83d21b5",
+    "target": "hda-compute-0",
+    "status": "Completed",
+    "parentRunId": null,
+    "createdTimeUtc": "2021-11-12T19:01:33.557259+00:00",
+    "startTimeUtc": "2021-11-12T19:01:46.902Z",
+    "endTimeUtc": "2021-11-12T19:48:03.042Z",
+    "error": null,
+    "warnings": [
+        {
+            "source": "JasmineService",
+            "message": "Experiment timeout reached, hence experiment stopped. Current experiment timeout: 0 hour(s) 30 minute(s)"
+        }
+    ],
+    "tags": {
+        "model_explain_run": "best_run",
+        "_aml_system_azureml.automlComponent": "AutoML",
+        "pipeline_id": "",
+        "score": "",
+        "predicted_cost": "",
+        "fit_time": "",
+        "training_percent": "",
+        "iteration": "",
+        "run_preprocessor": "",
+        "run_algorithm": "",
+        "_aml_system_azureml.automl_early_exit_message": "Experiment timeout reached, hence experiment stopped. Current experiment timeout: 0 hour(s) 30 minute(s)",
+        "automl_best_child_run_id": "AutoML_79c242ff-bb49-48c1-ae1d-d3fe66b35578_20",
+        "model_explain_best_run_child_id": "AutoML_79c242ff-bb49-48c1-ae1d-d3fe66b35578_20"
+    },
+    "properties": {
+        "num_iterations": "1000",
+        "training_type": "TrainFull",
+        "acquisition_function": "EI",
+        "primary_metric": "normalized_root_mean_squared_error",
+        "train_split": "0",
+        "acquisition_parameter": "0",
+        "num_cross_validation": "5",
+        "target": "hda-compute-0",
+        "AMLSettingsJsonString": "{\"enable_early_stopping\":true,\"enable_ensembling\":true,\"enable_stack_ensembling\":true,\"ensemble_iterations\":15,\"enable_onnx_compatible_models\":false,\"max_cores_per_iteration\":-1,\"send_telemetry\":true,\"blacklist_algos\":[\"TensorFlowDNN\",\"TensorFlowLinearRegressor\"],\"compute_target\":\"hda-compute-0\",\"enable_dnn\":false,\"enable_code_generation\":false,\"experiment_exit_score\":null,\"experiment_timeout_minutes\":30,\"featurization\":\"auto\",\"is_timeseries\":false,\"iteration_timeout_minutes\":30,\"max_concurrent_iterations\":1,\"metric_operation\":\"minimize\",\"model_explainability\":true,\"n_cross_validations\":null,\"name\":\"experiment-0-percent-white\",\"path\":\"./sample_projects/experiment-0-percent-white\",\"primary_metric\":\"normalized_root_mean_squared_error\",\"region\":\"westeurope\",\"resource_group\":\"hda-auto-ml\",\"subscription_id\":\"b54a47bf-0c6e-4325-a485-38f7356ede13\",\"task_type\":\"regression\",\"validation_size\":null,\"test_size\":null,\"vm_type\":\"STANDARD_DS3_V2\",\"workspace_name\":\"hda-machine-learning-dev\",\"label_column_name\":\"percent_pell_grant\",\"enable_batch_run\":true,\"enable_run_restructure\":true}",
+        "DataPrepJsonString": "{\\\"datasets\\\":0,\\\"training_data\\\":{\\\"datasetId\\\":\\\"1d54b565-752a-4bc7-beed-374b0bac21ac\\\"},\\\"test_data\\\":{\\\"datasetId\\\":\\\"0c9d42cc-2920-4c54-b1b9-76054aedfb60\\\"}}",
+        "EnableSubsampling": "False",
+        "runTemplate": "AutoML",
+        "azureml.runsource": "automl",
+        "_aml_system_scenario_identification": "Remote.Parent",
+        "ClientType": "Browser",
+        "environment_cpu_name": "AzureML-AutoML",
+        "environment_cpu_label": "prod",
+        "environment_gpu_name": "AzureML-AutoML-GPU",
+        "environment_gpu_label": "prod",
+        "root_attribution": "automl",
+        "attribution": "AutoML",
+        "Orchestrator": "AutoML",
+        "CancelUri": "https://westeurope.api.azureml.ms/jasmine/v1.0/subscriptions/b54a47bf-0c6e-4325-a485-38f7356ede13/resourceGroups/hda-auto-ml/providers/Microsoft.MachineLearningServices/workspaces/hda-machine-learning-dev/experiment/experiment-0-percent-white/cancel/AutoML_79c242ff-bb49-48c1-ae1d-d3fe66b35578",
+        "ClientSdkVersion": "1.35.1",
+        "snapshotId": "00000000-0000-0000-0000-000000000000",
+        "SetupRunId": "AutoML_79c242ff-bb49-48c1-ae1d-d3fe66b35578_setup",
+        "SetupRunContainerId": "dcid.AutoML_79c242ff-bb49-48c1-ae1d-d3fe66b35578_setup",
+        "FeaturizationRunJsonPath": "featurizer_container.json",
+        "FeaturizationRunId": "AutoML_79c242ff-bb49-48c1-ae1d-d3fe66b35578_featurize",
+        "ProblemInfoJsonString": "{\"dataset_num_categorical\": 0, \"is_sparse\": true, \"subsampling\": false, \"has_extra_col\": true, \"dataset_classes\": 3563, \"dataset_features\": 40458, \"dataset_samples\": 4943, \"single_frequency_class_detected\": false}",
+        "ModelExplainRunId": "AutoML_79c242ff-bb49-48c1-ae1d-d3fe66b35578_ModelExplain"
+    },
+    "parameters": {},
+    "services": {},
+    "inputDatasets": [
+        {
+            "identifier": {
+                "savedId": "1d54b565-752a-4bc7-beed-374b0bac21ac",
+                "registeredId": null,
+                "registeredVersion": null
+            },
+            "consumptionType": "RunInput",
+            "inputDetails": {
+                "inputName": "training_data",
+                "mechanism": "Direct",
+                "pathOnCompute": null
+            }
+        },
+        {
+            "identifier": {
+                "savedId": "0c9d42cc-2920-4c54-b1b9-76054aedfb60",
+                "registeredId": null,
+                "registeredVersion": null
+            },
+            "consumptionType": "RunInput",
+            "inputDetails": {
+                "inputName": "test_data",
+                "mechanism": "Direct",
+                "pathOnCompute": null
+            }
+        }
+    ],
+    "outputDatasets": [],
+    "runDefinition": null,
+    "logFiles": {},
+    "jobCost": null,
+    "revision": 27,
+    "runTypeV2": {
+        "orchestrator": "AutoML",
+        "traits": [
+            "automl",
+            "Remote.Parent"
+        ],
+        "attribution": null,
+        "computeType": null
+    },
+    "settings": {},
+    "computeRequest": null,
+    "compute": null,
+    "createdBy": {
+        "userObjectId": "98a5e1bf-5f7a-4c23-86d0-2ea84cf08796",
+        "userPuId": "1003200102011692",
+        "userIdp": null,
+        "userAltSecId": null,
+        "userIss": "https://sts.windows.net/db5a84e9-edef-4e32-873d-2f73adc3115a/",
+        "userTenantId": "db5a84e9-edef-4e32-873d-2f73adc3115a",
+        "userName": "Luciano Jung",
+        "upn": "luciano.jung@stud.h-da.de"
+    },
+    "computeDuration": "00:46:16.1392219",
+    "effectiveStartTimeUtc": null,
+    "runNumber": 286,
+    "rootRunId": "AutoML_79c242ff-bb49-48c1-ae1d-d3fe66b35578",
+    "userId": "98a5e1bf-5f7a-4c23-86d0-2ea84cf08796",
+    "statusRevision": 0,
+    "hasVirtualParent": false,
+    "currentComputeTime": null,
+    "lastStartTimeUtc": null,
+    "lastModifiedBy": {
+        "userObjectId": "98a5e1bf-5f7a-4c23-86d0-2ea84cf08796",
+        "userPuId": "1003200102011692",
+        "userIdp": null,
+        "userAltSecId": null,
+        "userIss": "https://sts.windows.net/db5a84e9-edef-4e32-873d-2f73adc3115a/",
+        "userTenantId": "db5a84e9-edef-4e32-873d-2f73adc3115a",
+        "userName": "Luciano Jung",
+        "upn": "luciano.jung@stud.h-da.de"
+    },
+    "lastModifiedUtc": "2021-11-12T19:51:43.4813681+00:00",
+    "duration": "00:46:16.1392219"
+}
