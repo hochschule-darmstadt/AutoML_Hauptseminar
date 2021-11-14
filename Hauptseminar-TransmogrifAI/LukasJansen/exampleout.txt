@@ -1,0 +1,112 @@
+Model summary:
+Evaluated OpGBTClassifier, OpLinearSVC, OpNaiveBayes, OpRandomForestClassifier, OpDecisionTreeClassifier, OpLogisticRegression models using Cross Validation and area under precision-recall metric.
+Evaluated 18 OpGBTClassifier models with area under precision-recall metric between [0.7913434687121172, 0.8317188233359778].
+Evaluated 4 OpLinearSVC models with area under precision-recall metric between [0.7889802506697747, 0.8038799080714718].
+Evaluated 1 OpNaiveBayes model with area under precision-recall metric between [0.5692532427638577, 0.5692532427638577].
+Evaluated 18 OpRandomForestClassifier models with area under precision-recall metric between [0.555840594153317, 0.8296072260461276].
+Evaluated 18 OpDecisionTreeClassifier models with area under precision-recall metric between [0.555840594153317, 0.7905811606563132].
+Evaluated 8 OpLogisticRegression models with area under precision-recall metric between [0.7887070261455706, 0.8131253431859156].
++--------------------------------------------------------+
+|            Selected Model - OpGBTClassifier            |
++--------------------------------------------------------+
+| Model Param           | Value                          |
++-----------------------+--------------------------------+
+| cacheNodeIds          | false                          |
+| checkpointInterval    | 10                             |
+| featureSubsetStrategy | all                            |
+| impurity              | gini                           |
+| lossType              | logistic                       |
+| maxBins               | 32                             |
+| maxDepth              | 12                             |
+| maxIter               | 20                             |
+| maxMemoryInMB         | 256                            |
+| minInfoGain           | 0.001                          |
+| minInstancesPerNode   | 10                             |
+| modelType             | OpGBTClassifier                |
+| name                  | OpGBTClassifier_00000000005b_1 |
+| seed                  | 1918769265                     |
+| stepSize              | 0.1                            |
+| subsamplingRate       | 1.0                            |
+| uid                   | OpGBTClassifier_00000000005b   |
+| validationTol         | 0.01                           |
++-----------------------+--------------------------------+
++------------------------------------------------------------------------------------+
+|                              Model Evaluation Metrics                              |
++------------------------------------------------------------------------------------+
+| Metric Name                            | Training Set Value  | Hold Out Set Value  |
++----------------------------------------+---------------------+---------------------+
+| (bin score evaluation metrics)_binSize | 0.01                | 0.01                |
+| area under ROC                         | 0.8281233829558572  | 0.8119890316356064  |
+| area under precision-recall            | 0.8402893329304966  | 0.8112023005605363  |
+| brier score                            | 0.16297820477736275 | 0.16906433502325557 |
+| error                                  | 0.24023465445700387 | 0.24732620320855614 |
+| f1                                     | 0.8017007204440769  | 0.8008611410118408  |
+| false negative                         | 491.0               | 47.0                |
+| false positive                         | 1188.0              | 138.0               |
+| precision                              | 0.74072457442165    | 0.7294117647058823  |
+| recall                                 | 0.8736164736164737  | 0.8878281622911695  |
+| true negative                          | 1916.0              | 191.0               |
+| true positive                          | 3394.0              | 372.0               |
++----------------------------------------+---------------------+---------------------+
++---------------------------------------------------------------------------+
+|                            Top Model Insights                             |
++---------------------------------------------------------------------------+
+| Top Positive Correlations                          |    Correlation Value |
++----------------------------------------------------+----------------------+
+| sslfinal_state(sslfinal_state = 1)                 |  0.36717279900475863 |
+| web_traffic(web_traffic = 1)                       |   0.2647208567008028 |
+| having_sub_domain(having_sub_domain = 1)           |  0.24203797862649326 |
+| url_length(url_length = 1)                         |  0.03790166977829162 |
+| redirect(redirect = 0)                             |  0.02874923507093566 |
+| sfh(sfh = 1)                                       | -0.03733877223913502 |
+| links_in_tags(links_in_tags = 1)                   |   -0.074498286836727 |
+| links_pointing_to_page(links_pointing_to_page = 0) |  -0.0788472468599696 |
+| url_of_anchor(url_of_anchor = 1)                   |  -0.3080811496092345 |
++----------------------------------------------------+----------------------+
++---------------------------------------------------------------------------+
+| Top Contributions                                  |   Contribution Value |
++----------------------------------------------------+----------------------+
+| sslfinal_state(sslfinal_state = 1)                 |   0.7267796407514154 |
+| url_of_anchor(url_of_anchor = 1)                   |  0.06719119570941409 |
+| web_traffic(web_traffic = 1)                       |  0.05698187890797961 |
+| having_sub_domain(having_sub_domain = 1)           | 0.036483000287409376 |
+| url_length(url_length = 1)                         |  0.02620495239418641 |
+| links_pointing_to_page(links_pointing_to_page = 0) | 0.024726411021493443 |
+| sfh(sfh = 1)                                       |  0.02167140739926347 |
+| links_in_tags(links_in_tags = 1)                   | 0.021378162988578305 |
+| redirect(redirect = 0)                             |  0.01858335054025987 |
++----------------------------------------------------+----------------------+
++-----------------------------------------------+
+| Top CramersV           |             CramersV |
++------------------------+----------------------+
+| sslfinal_state         |   0.3671727990047583 |
+| url_of_anchor          |  0.30808114960923455 |
+| web_traffic            |  0.26472085670080264 |
+| having_sub_domain      |   0.2420379786264932 |
+| links_pointing_to_page |  0.07884724685996981 |
+| links_in_tags          |  0.07449828683672716 |
+| url_length             |  0.03790166977828989 |
+| sfh                    | 0.037338772239135724 |
+| redirect               |  0.02874923507093576 |
++------------------------+----------------------+
+Top 20 feature contributions:
+sslfinal_state_sslfinal_state_1_23: 0.7267796407514154
+url_of_anchor_url_of_anchor_1_42: 0.06719119570941409
+web_traffic_web_traffic_1_82: 0.05698187890797961
+having_sub_domain_having_sub_domain_1_19: 0.036483000287409376
+url_length_url_length_1_3: 0.02620495239418641
+links_pointing_to_page_links_pointing_to_page_0_92: 0.024726411021493443
+sfh_sfh_1_50: 0.02167140739926347
+links_in_tags_links_in_tags_1_46: 0.021378162988578305
+redirect_redirect_0_60: 0.01858335054025987
+page_rank_page_rank_1_86: 0.0
+page_rank_page_rank_OTHER_87: 0.0
+page_rank_page_rank_NullIndicatorValue_88: 0.0
+url_length_url_length_0_4: 0.0
+url_length_url_length_OTHER_5: 0.0
+url_length_url_length_NullIndicatorValue_6: 0.0
+links_in_tags_links_in_tags_0_47: 0.0
+links_in_tags_links_in_tags_OTHER_48: 0.0
+links_in_tags_links_in_tags_NullIndicatorValue_49: 0.0
+redirect_redirect_1_61: 0.0
+redirect_redirect_OTHER_62: 0.0
