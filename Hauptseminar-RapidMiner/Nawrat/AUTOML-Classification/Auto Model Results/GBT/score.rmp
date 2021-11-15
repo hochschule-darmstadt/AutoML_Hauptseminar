@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="9.10.001">
+  <context>
+    <input/>
+    <output/>
+    <macros>
+      <macro>
+        <key>id</key>
+        <value/>
+      </macro>
+      <macro>
+        <key>actual</key>
+        <value/>
+      </macro>
+      <macro>
+        <key>_unitid</key>
+        <value>210452.8258142828</value>
+      </macro>
+      <macro>
+        <key>__latitude__</key>
+        <value>37.84863905805919</value>
+      </macro>
+      <macro>
+        <key>__longitude__</key>
+        <value>-89.81280164433628</value>
+      </macro>
+      <macro>
+        <key>__undergrad_size__</key>
+        <value>3139.4161943319837</value>
+      </macro>
+      <macro>
+        <key>__percent_white__</key>
+        <value>0.5592445344129563</value>
+      </macro>
+      <macro>
+        <key>__percent_black__</key>
+        <value>0.1633609311740891</value>
+      </macro>
+      <macro>
+        <key>__percent_hispanic__</key>
+        <value>0.14353769230769245</value>
+      </macro>
+      <macro>
+        <key>__percent_asian__</key>
+        <value>0.03216738866396754</value>
+      </macro>
+      <macro>
+        <key>__percent_part_time__</key>
+        <value>0.2308020457767873</value>
+      </macro>
+      <macro>
+        <key>__spend_per_student__</key>
+        <value>7268.110143753796</value>
+      </macro>
+      <macro>
+        <key>__percent_pell_grant__</key>
+        <value>0.4936158065168991</value>
+      </macro>
+      <macro>
+        <key>__school_name__</key>
+        <value>Bryan University</value>
+      </macro>
+      <macro>
+        <key>__city__</key>
+        <value>New York</value>
+      </macro>
+      <macro>
+        <key>__state__</key>
+        <value>CA</value>
+      </macro>
+      <macro>
+        <key>__zip__</key>
+        <value>90010</value>
+      </macro>
+      <macro>
+        <key>__school_webpage__</key>
+        <value>www.empire.edu</value>
+      </macro>
+      <macro>
+        <key>__admission_rate__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__sat_verbal_midrange__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__sat_math_midrange__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__sat_writing_midrange__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__act_combined_midrange__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__act_english_midrange__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__act_math_midrange__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__act_writing_midrange__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__sat_total_average__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__average_cost_academic_year__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__average_cost_program_year__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>instate___</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>out_of_state___</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__faculty_salary__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__percent_part_time_faculty__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__completion_rate__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__predominant_degree__</key>
+        <value>Certificate</value>
+      </macro>
+      <macro>
+        <key>__highest_degree__</key>
+        <value>Graduate</value>
+      </macro>
+      <macro>
+        <key>__ownership__</key>
+        <value>Public</value>
+      </macro>
+      <macro>
+        <key>__region__</key>
+        <value>Southeast (AL, AR, FL, GA, KY, LA, MS, NC, SC, TN, VA, WV)</value>
+      </macro>
+      <macro>
+        <key>__gender__</key>
+        <value>COED</value>
+      </macro>
+      <macro>
+        <key>__carnegie_basic_classification__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__carnegie_undergraduate__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__carnegie_size__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__religious_affiliation__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__percent_female__</key>
+        <value>0.61000001430511</value>
+      </macro>
+      <macro>
+        <key>__agege24__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__faminc__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__mean_earnings_6_years__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__median_earnings_6_years__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__mean_earnings_10_years__</key>
+        <value>?</value>
+      </macro>
+      <macro>
+        <key>__median_earnings_10_years___</key>
+        <value>?</value>
+      </macro>
+    </macros>
+  </context>
+  <operator activated="true" class="process" compatibility="9.10.001" expanded="true" name="Process" origin="GENERATED_MODELOPS">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="utility:create_exampleset" compatibility="9.10.001" expanded="true" name="Create ExampleSet">
+        <parameter key="generator_type" value="comma separated text"/>
+        <parameter key="number_of_examples" value="100"/>
+        <parameter key="use_stepsize" value="false"/>
+        <list key="function_descriptions"/>
+        <parameter key="add_id_attribute" value="false"/>
+        <list key="numeric_series_configuration"/>
+        <list key="date_series_configuration"/>
+        <list key="date_series_configuration (interval)"/>
+        <parameter key="date_format" value="yyyy-MM-dd HH:mm:ss"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="input_csv_text" value="error&#10;deployment is not active"/>
+        <parameter key="column_separator" value=","/>
+        <parameter key="parse_all_as_nominal" value="false"/>
+        <parameter key="decimal_point_character" value="."/>
+        <parameter key="trim_attribute_names" value="true"/>
+      </operator>
+      <connect from_op="Create ExampleSet" from_port="output" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+    </process>
+  </operator>
+</process>

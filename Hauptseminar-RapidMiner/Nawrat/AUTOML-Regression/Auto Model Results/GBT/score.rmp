@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="9.10.001">
+  <context>
+    <input/>
+    <output/>
+    <macros>
+      <macro>
+        <key>id</key>
+        <value/>
+      </macro>
+      <macro>
+        <key>actual</key>
+        <value/>
+      </macro>
+      <macro>
+        <key>having_ip_address</key>
+        <value>0.7417603722373013</value>
+      </macro>
+      <macro>
+        <key>url_length</key>
+        <value>0.17577872560423938</value>
+      </macro>
+      <macro>
+        <key>shortining_service</key>
+        <value>0.8698461936150963</value>
+      </macro>
+      <macro>
+        <key>having_at_symbol</key>
+        <value>0.8768256430140882</value>
+      </macro>
+      <macro>
+        <key>double_slash_redirecting</key>
+        <value>0.8713971823704278</value>
+      </macro>
+      <macro>
+        <key>prefix_suffix</key>
+        <value>0.13377278014734392</value>
+      </macro>
+      <macro>
+        <key>having_sub_domain</key>
+        <value>0.3058032829261988</value>
+      </macro>
+      <macro>
+        <key>sslfinal_state</key>
+        <value>0.5723148507173323</value>
+      </macro>
+      <macro>
+        <key>domain_registeration_length</key>
+        <value>0.3333333333333333</value>
+      </macro>
+      <macro>
+        <key>favicon</key>
+        <value>0.8131058549825514</value>
+      </macro>
+      <macro>
+        <key>port</key>
+        <value>0.8628667442161044</value>
+      </macro>
+      <macro>
+        <key>https_token</key>
+        <value>0.8377924260049114</value>
+      </macro>
+      <macro>
+        <key>request_url</key>
+        <value>0.5932531989143078</value>
+      </macro>
+      <macro>
+        <key>url_of_anchor</key>
+        <value>0.22114514669768645</value>
+      </macro>
+      <macro>
+        <key>links_in_tags</key>
+        <value>0.23768902675455603</value>
+      </macro>
+      <macro>
+        <key>sfh</key>
+        <value>0.16375856275042006</value>
+      </macro>
+      <macro>
+        <key>submitting_to_email</key>
+        <value>0.8172418249967688</value>
+      </macro>
+      <macro>
+        <key>abnormal_url</key>
+        <value>0.8521390719917281</value>
+      </macro>
+      <macro>
+        <key>redirect</key>
+        <value>0.11865063978286157</value>
+      </macro>
+      <macro>
+        <key>on_mouseover</key>
+        <value>0.8799276205247512</value>
+      </macro>
+      <macro>
+        <key>rightclick</key>
+        <value>0.9565723148507174</value>
+      </macro>
+      <macro>
+        <key>popupwidnow</key>
+        <value>0.8054801602688381</value>
+      </macro>
+      <macro>
+        <key>iframe</key>
+        <value>0.90668217655422</value>
+      </macro>
+      <macro>
+        <key>age_of_domain</key>
+        <value>0.4293653871009435</value>
+      </macro>
+      <macro>
+        <key>dnsrecord</key>
+        <value>0.6034638748869071</value>
+      </macro>
+      <macro>
+        <key>web_traffic</key>
+        <value>0.5380638490370945</value>
+      </macro>
+      <macro>
+        <key>page_rank</key>
+        <value>0.28059971565206154</value>
+      </macro>
+      <macro>
+        <key>google_index</key>
+        <value>0.8701046917409849</value>
+      </macro>
+      <macro>
+        <key>links_pointing_to_page</key>
+        <value>0.39356339666537415</value>
+      </macro>
+      <macro>
+        <key>statistical_report</key>
+        <value>0.8301667312911981</value>
+      </macro>
+      <macro>
+        <key>result</key>
+        <value>true</value>
+      </macro>
+    </macros>
+  </context>
+  <operator activated="true" class="process" compatibility="9.10.001" expanded="true" name="Process" origin="GENERATED_MODELOPS">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="utility:create_exampleset" compatibility="9.10.001" expanded="true" name="Create ExampleSet">
+        <parameter key="generator_type" value="comma separated text"/>
+        <parameter key="number_of_examples" value="100"/>
+        <parameter key="use_stepsize" value="false"/>
+        <list key="function_descriptions"/>
+        <parameter key="add_id_attribute" value="false"/>
+        <list key="numeric_series_configuration"/>
+        <list key="date_series_configuration"/>
+        <list key="date_series_configuration (interval)"/>
+        <parameter key="date_format" value="yyyy-MM-dd HH:mm:ss"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="input_csv_text" value="error&#10;deployment is not active"/>
+        <parameter key="column_separator" value=","/>
+        <parameter key="parse_all_as_nominal" value="false"/>
+        <parameter key="decimal_point_character" value="."/>
+        <parameter key="trim_attribute_names" value="true"/>
+      </operator>
+      <connect from_op="Create ExampleSet" from_port="output" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+    </process>
+  </operator>
+</process>
